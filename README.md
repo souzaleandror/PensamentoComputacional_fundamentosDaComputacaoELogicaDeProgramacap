@@ -1,0 +1,2 @@
+# PensamentoComputacional_fundamentosDaComputacaoELogicaDeProgramacap
+Pensamento computacional: fundamentos da computação e lógica de programação
