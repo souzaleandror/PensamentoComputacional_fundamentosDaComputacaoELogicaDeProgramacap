@@ -491,3 +491,266 @@ A importância da abstração para ocultar complexidade e destacar informações
 A função dos algoritmos como sequência de instruções claras para resolver problemas.
 O papel da abstração na gestão de recursos de hardware e computação em nuvem.
 A aplicação prática de algoritmos em programação e atividades cotidianas.
+
+#15/01/2026
+
+@03-Resolvendo problemas
+
+@@01
+Resolvendo problemas com algoritmos
+
+No passo anterior do curso, exploramos os principais fundamentos do pensamento computacional. A decomposição de um problema em pequenas partes foi nosso primeiro passo. Em seguida, vimos que podemos, a partir dessas pequenas partes, reconhecer padrões para aplicar conhecimentos prévios e soluções já existentes, assim como adaptá-las. Depois, utilizamos a abstração para focar apenas no que é essencial em cada demanda. Por fim, abordamos a elaboração de algoritmos como uma sequência de passos que descrevem instruções com lógica e precisão para resolver cada pequeno problema que decompusemos, permitindo encaminhar uma solução para a demanda apresentada como desafio.
+
+Elaborando algoritmos na prática com um exemplo cotidiano
+Como elaboramos algoritmos na prática? Vamos começar com uma atividade simples do cotidiano, utilizando um exemplo já mencionado: fazer um café coado. Nosso objetivo com o algoritmo é criar um tutorial para que pessoas, mesmo que nunca tenham feito café coado, consigam prepará-lo. O primeiro passo será dividir essa tarefa em partes menores. Em seguida, criaremos um passo a passo conciso e claro, para que todos compreendam bem o processo. Adotaremos uma linguagem de representação dessas instruções que seja interpretável por humanos, já que vamos ensinar pessoas a fazer. Portanto, utilizaremos uma linguagem natural, a mesma que estamos usando neste vídeo. Neste caso, estamos usando uma linguagem verbal, mas usaremos uma linguagem escrita, que segue o mesmo padrão e sintaxe.
+
+A primeira instrução que podemos incluir nesse passo a passo é pedir para a pessoa pegar todos os utensílios que serão utilizados: um filtro de papel, um suporte e uma garrafa térmica. Na sequência, pediremos para posicionar o filtro no suporte e o suporte sobre a garrafa. No terceiro passo, solicitaremos que a pessoa adicione o pó de café, na quantidade de uma colher por xícara de água, que será colocada para ferver usando uma chaleira ou canecão. A água deve ser aquecida até quase ferver, ou seja, quando aparecerem bolhas no fundo do recipiente, já podemos apagar o fogo e começar a passar o café. Para isso, derramaremos um pouco de água sobre o pó, apenas para umedecer, e em seguida, derramaremos o restante da água em movimentos circulares. Após derramar toda a água, aguardaremos a conclusão do processo de filtragem e serviremos o café na garrafa para as pessoas que forem tomar café conosco. Este é um algoritmo com uma sequência de passos usando uma linguagem compreensível por humanos. São passos concisos, claros e que levam ao mesmo resultado final.
+
+Calculando a média aritmética em um sistema de gestão de alunos
+Agora, podemos trabalhar na elaboração de um algoritmo mais simples, pensando em uma funcionalidade incluída em um sistema de gestão de alunos, como o cálculo da média aritmética simples de quatro notas. O ano letivo na educação básica, em geral, é dividido em quatro bimestres. Para calcular a média final, pegamos a média de um determinado aluno nos quatro bimestres e dividimos por quatro. Como implementamos isso em termos de algoritmo? Usando uma linguagem natural compreensível por humanos, colocamos o seguinte como primeira instrução: obter as quatro notas, seja dos sistemas ou dos bancos de dados. Somamos essas quatro notas e dividimos a soma pelo número de notas coletadas, que neste caso são quatro. Mostramos o resultado dessa média ou salvamos o resultado no sistema, por exemplo, para visualização pelos pais dos alunos.
+
+Resolvendo o problema dos missionários e canibais
+Podemos também abordar outro caso clássico de elaboração de algoritmo, muito usado em disciplinas de introdução à computação e ao pensamento computacional, que envolve um jogo em que precisamos atingir um objetivo. Nesse jogo, temos três missionários e três canibais em um lado de um rio que precisam atravessar para o outro. Podemos imaginar que esses missionários e canibais estão na margem esquerda e querem atravessar para a margem direita. Para esse transporte, temos apenas um barco, que comporta apenas duas pessoas por vez. Sempre uma pessoa deve voltar no barco para conduzi-lo de volta à outra margem e continuar o transporte. Há uma regra de segurança: o número de canibais não pode ser superior ao número de missionários em nenhuma das margens do rio. Isso significa que sempre devemos ter, no mínimo, uma quantidade de missionários igual à quantidade de canibais em cada margem. Nosso objetivo é realizar a travessia com todos em segurança, observando essas regras e utilizando o barco que comporta apenas duas pessoas. Como organizamos essas travessias? Quem vai na primeira viagem? Alguém sempre deve voltar com o barco, e situações de risco devem ser evitadas.
+
+Como realizamos essa tarefa? Vamos abstrair um pouco essa situação. Utilizaremos uma representação de estados, que podemos entender como uma fotografia de cada margem do rio em um dado instante, após uma travessia de barco. O primeiro estado será o seguinte: temos três missionários e três canibais na margem esquerda. Esse será nosso estado inicial. O barco está na margem esquerda e partirá para a margem direita. Assim que chegar lá, teremos uma nova configuração. Por exemplo, dois canibais atravessando nessa primeira travessia. No segundo estado, teremos dois canibais na margem direita, zero missionários na margem direita, três missionários na margem esquerda e apenas um canibal na margem esquerda. Isso é uma representação de estados.
+
+Construindo o algoritmo para a travessia segura
+Para facilitar essa representação, usaremos apenas as letras M para missionário e C para canibal de cada lado do rio. Por exemplo, no estado inicial, temos 3M, 3C do lado esquerdo e 0M, 0C do lado direito. Usamos uma barra para delimitar o que é a margem esquerda do que é a margem direita, facilitando o entendimento dos diferentes estados pelos quais passaremos durante a resolução do problema.
+
+Vamos construir o algoritmo. O primeiro passo é o estado inicial: 3M, 3C na margem esquerda, nada na margem direita. Primeiro, deslocaremos dois canibais para a margem direita. Assim, obtemos um novo estado: 3M, 1C na margem esquerda e 0M, 2C na margem direita. No segundo estado, o barco voltará para a margem esquerda, e precisará voltar com uma pessoa, que será um canibal. Assim, teremos 3M, 2C na margem esquerda e 0M, 1C na margem direita.
+
+Na próxima travessia, dois canibais atravessarão novamente. No terceiro estado, teremos 3M na margem esquerda e 3C na margem direita. Faremos uma nova travessia. O barco voltará com um canibal, resultando em 3M, 1C na margem esquerda e 0M, 2C na margem direita. O barco regressará para a margem direita levando dois missionários. Ao chegar lá, teremos 2M, 2C na margem direita e 1M, 1C na margem esquerda.
+
+Na sexta travessia, atravessaremos com um missionário e um canibal, mantendo o mesmo número de missionários e canibais em cada margem. Assim, ficamos com 2M, 2C na margem esquerda e 1M, 1C na margem direita. Em seguida, atravessaremos com os dois missionários da margem esquerda para a direita, ficando com 0M, 2C na margem esquerda e 3M, 1C na margem direita. O barco voltará com um canibal, resultando em 3C na margem esquerda e 3M na margem direita.
+
+O barco voltará com dois canibais, ficando com 3M na margem direita, 2C na margem direita e 1C na margem esquerda. O barco voltará com um canibal, resultando em 2C na margem esquerda, 3M na margem direita e 1C na margem direita. Na travessia final, o décimo primeiro estado será 3M e 3C na margem direita. Cumprimos a travessia usando uma sequência de passos bem estruturados e claros, seguindo todas as regras e atingindo nosso objetivo.
+
+Refletindo sobre a complexidade e a lógica dos algoritmos
+Esse é um exemplo de algoritmo. Observe que foi mais complexo, com várias etapas intermediárias, usando lógica para decidir quando enviar um missionário ou um canibal, pois o barco não pode voltar sozinho. O pensamento computacional, como no caso do missionário e do canibal, nos permite transformar tarefas complexas em uma sequência lógica de passos simples. Transferimos o missionário e o canibal, depois os dois canibais para outra margem, e assim atingimos o objetivo. Inicialmente parecia complexo, com 11 etapas, mas conseguimos chegar lá.
+
+Agora que temos uma noção mais clara de como elaborar algoritmos e como eles nos ajudam a resolver problemas complexos, vamos nos aprofundar mais em como estruturar essas sequências de passos para que os computadores também consigam executá-los.
+
+@@02
+Representando algoritmos
+
+Agora que entendemos mais sobre como elaboramos algoritmos para resolver diferentes problemas e alcançar diversos objetivos, vamos analisar a estrutura desses algoritmos e compreender alguns detalhes desse processo. Nosso objetivo é organizar algoritmos que sejam interpretáveis e executáveis por máquinas, ou melhor, por nossos computadores.
+
+Vamos retomar o algoritmo do café coado, que escrevemos utilizando linguagem natural no vídeo anterior. Temos algumas questões a considerar. Por exemplo, quando mencionamos a instrução de aquecer a água, dissemos que era necessário atingir um estado de quase fervura. Mas o que significa "quase ferver"? Isso não é muito claro. "Quase ferver" pode significar que a água ficou quente e começou a soltar um pouco de vapor, mas talvez não esteja na temperatura desejada. Portanto, essa instrução não ficou precisa.
+
+Identificando problemas na descrição do algoritmo
+Outra questão é sobre o fim da filtragem. Quando é o fim da filtragem? Deixamos um pouco de água no filtro porque isso não deixará o café mais aguado, ou queremos um café mais forte? O que significa esse "fim da filtragem" para servir o café? Além disso, mencionamos uma colher de café para cada xícara de água, mas não especificamos o tamanho da xícara nem o tipo de colher utilizada como medida. Pode ser uma colher de açúcar ou uma colher de chá, por exemplo.
+
+Essas questões determinam o resultado final que vamos obter, e um algoritmo não pode gerar esse tipo de dúvida. Por isso, ao organizar algoritmos, é importante que utilizemos uma linguagem natural estruturada de maneira lógica, para evitar qualquer tipo de dúvida na execução das tarefas.
+
+Estruturando o algoritmo do café coado
+Vamos retomar o algoritmo do café coado, estruturando-o ainda em linguagem natural, mas de forma mais lógica. Vamos começar com o início do algoritmo. No início, colocamos um comentário, indicado por uma barra, que é "preparar utensílios". Utilizamos uma identação para indicar o início do algoritmo. Nesse início, precisamos pegar três itens: filtro de papel, suporte e garrafa.
+
+// Preparar utensílios
+pegar(filtro de papel, suporte, garrafa)
+A segunda instrução é colocar o filtro de papel no suporte e posicionar o suporte na garrafa. Há uma lógica na forma como esses termos, entre parênteses, estão relacionados. Quando utilizamos a função "colocar filtro suporte", significa colocar o primeiro termo sobre o segundo termo. "Posicionar primeiro termo no segundo termo".
+
+colocar(filtro de papel, suporte)
+posicionar(suporte, garrafa)
+Adicionando o pó de café e aquecendo a água
+O "pegar" pode ser entendido como uma função que independe da ordem em que recolhemos os utensílios inicialmente. Aqui, já estamos usando uma lógica em que a ordem dos itens interfere no resultado final, tornando mais claro o que devemos colocar e onde, de forma mais concisa.
+
+Agora, vamos para a segunda etapa: adicionar o pó de café. Definimos um item chamado "quantidade", que será igual ao número de xícaras vezes a colher utilizada como medida. Implementamos uma nova instrução, que é "adicionar". Nessa instrução, colocamos entre parênteses: pó de café, quantidade, filtro de papel.
+
+// Adicionar pó de café
+quantidade = número de xícaras * colher
+adicionar(pó de café, quantidade, filtro de papel)
+Vamos adicionar o pó de café na quantidade definida anteriormente, ou seja, número de xícaras vezes a quantidade de colheres. Se colocarmos três xícaras, serão três colheres. Adicionamos três colheres de pó de café sobre o filtro de papel.
+
+Em seguida, passamos para o bloco de aquecer a água. Colocamos água no bule e aquecemos até uma temperatura precisa de 90 graus Celsius, não mais "quase ferver".
+
+// Aquecer água
+colocar(água, bule)
+aquecer(bule, 90ºC)
+Umedecendo o pó de café e filtragem principal
+Vamos para mais algumas sequências de passos. Temos a sequência de umedecer o pó de café, na qual derramamos a água quente de forma linear, com uma determinada vazão, sobre o filtro de papel que contém o pó de café.
+
+// Umedecer o pó de café
+derramar(água, modo, vazão, filtro de papel)
+Na filtragem principal, derramamos a água, reutilizando a instrução anterior, reconhecendo o padrão mencionado ao analisar o pensamento computacional.
+
+// Filtragem principal
+derramar(água, modo, vazão, filtro de papel)
+Vamos derramar a água, mas o que acontecerá? Quando estávamos umedecendo o pó de café, derramávamos de um determinado modo, com outra vazão. Especificávamos a vazão e o modo de derramar. Na filtragem, derramamos de maneira circular e com outra vazão, utilizando o mesmo instrumento, que é o filtro de papel.
+
+Finalizando o algoritmo do café coado
+Como finalizamos? Aguardamos que toda a água passe pelo filtro de papel. A finalização fica mais clara, e servimos o café dentro da garrafa de café.
+
+// Finalização
+aguardar(água, filtro de papel)
+servir(café, garrafa)
+Fim
+Temos um item ali, um termo que designa o fim do algoritmo. Temos início, fim e uma sequência de instruções. Observe que usamos uma linguagem natural, mas não tão natural assim; não utilizamos esse tipo de linguagem ao criar um texto. Podemos chamar isso de pseudocódigo. É um código que estamos utilizando, que, ao longo da explicação, introduzi como deve ser interpretado para a realização dessas tarefas. Utilizei uma abordagem mais lógica para organizar essas instruções. A regra desse pseudocódigo foi definida por nós mesmos. Se não tivéssemos explicado a lógica ou o raciocínio utilizado para construir esse pseudocódigo, talvez houvesse dúvidas na interpretação. Mas, como explicamos, ficou mais claro qual foi a racionalidade utilizada nesse processo de concepção do pseudocódigo.
+
+Compreendendo a base da estrutura de um algoritmo
+A partir desse pseudocódigo, podemos observar que temos uma base da estrutura de um algoritmo. E qual é essa base? Uma sequência. Dividimos esse algoritmo em algumas partes: umedecer o pó de café, filtragem principal, finalização, adicionar o pó de café, aquecer a água. Delimitamos alguns blocos, assim como colocamos o início e o fim, para deixar clara toda a estrutura do algoritmo. Essa sequência são passos executados um após o outro, sem desvios. Esse algoritmo foi linear e sequencial. Linear porque era uma instrução após a outra, sem necessidade de decisões. A única decisão era aguardar se a água não estivesse a 90 graus ou se toda a água não tivesse passado pelo filtro antes de servir o café. Podemos intuir que essa sequência é a base da estrutura de um algoritmo. Essa pequena sequência de instruções realiza blocos específicos da tarefa. Isso é importante para uma organização lógica da estrutura de um algoritmo, que pode ser mais complexo.
+
+Explorando características dos algoritmos
+Observamos que as principais características de um algoritmo são ser interpretável e executável por máquina. Por isso, escrevemos em pseudocódigo, para entender como codificar para que uma máquina compreenda. Usamos entradas e parâmetros, como o tamanho da colher, o tamanho da xícara de referência, o modo de derramar o café e a água, e a vazão em cada bloco. Esses são exemplos de entradas ou parâmetros. Ao organizar o algoritmo em blocos, ganhamos modularidade, facilitando ajustes em partes do algoritmo. Isso nos dá mais controle sobre o processo que estamos executando.
+
+Na computação, os algoritmos adotam linguagens específicas, como o código que escrevemos aqui. Essas linguagens são próximas à linguagem natural, mas com uma sintaxe clara, para evitar dúvidas. O computador executa um programa para resolver um problema específico. Um programa é um algoritmo escrito em uma linguagem específica compreendida por um computador. O computador executa um algoritmo ou um conjunto de algoritmos para resolver um problema específico.
+
+Avançando na organização lógica de algoritmos
+Agora que entendemos mais sobre a estrutura de um algoritmo e como representá-lo de diferentes formas, vamos avançar em partes importantes para organizar de forma lógica uma sequência de passos que constituem um algoritmo.
+
+@@03
+Segurança na travessia de dados
+
+O Bytebank, um banco digital que oferece serviços bancários online, está desenvolvendo um novo sistema de transferência de dados entre seus servidores e precisa garantir que os dados sejam transferidos de forma segura, sem risco de interceptação. A equipe de segurança que você integra está encarregada de criar um algoritmo que simule a travessia segura de dados.
+Qual abordagem de representação de estados seria mais eficaz para garantir a segurança dos dados durante a transferência?
+
+Modelar a transferência de dados como uma série de estados, onde cada estado representa uma configuração segura dos dados em trânsito, garantindo que em nenhum estado intermediário os dados estejam vulneráveis a interceptação, utilizando criptografia e verificações de integridade.
+ 
+Correta, pois essa abordagem assegura que a transferência de dados seja tratada como uma sequência de estados seguros, semelhante ao problema dos missionários e canibais, garantindo que os dados nunca estejam em risco de interceptação.
+Alternativa incorreta
+Transferir todos os dados de uma só vez, sem considerar estados intermediários, confiando apenas na criptografia para proteger os dados durante a transferência, e ignorando a possibilidade de ataques que possam ocorrer durante o processo, sem implementar medidas adicionais de segurança.
+ 
+Alternativa incorreta
+Implementar um sistema de transferência que dependa exclusivamente de verificações de integridade após a conclusão da transferência, sem monitorar a segurança durante o processo, e sem considerar a possibilidade de que os dados possam ser comprometidos antes de chegarem ao destino final.
+ 
+Alternativa incorreta
+Utilizar um algoritmo que priorize a velocidade da transferência, minimizando o tempo em que os dados estão em trânsito, sem focar na representação de estados, e desconsiderando a importância de manter a segurança em cada etapa do processo, o que pode resultar em exposição a riscos.
+ 
+Incorreta, pois priorizar apenas a velocidade sem considerar a segurança em cada estado pode comprometer a integridade e a confidencialidade dos dados, além de não garantir proteção contra interceptações durante o trânsito.
+
+@@04
+Modularidade em algoritmos
+
+A Playcatch, uma plataforma de streaming de música, está desenvolvendo um novo recurso de curadoria musical que permite às pessoas usuárias criar playlists colaborativas. A equipe de desenvolvimento que você faz parte precisa criar um algoritmo que organize as contribuições das pessoas usuárias de forma lógica e modular, garantindo que a playlist final seja coesa e reflita as preferências de todas as participantes. Durante o desenvolvimento, surgiram questões sobre como dividir o algoritmo em blocos modulares para facilitar ajustes e melhorias.
+Qual das alternativas abaixo melhor descreve como você estruturaria esse algoritmo para garantir que a curadoria musical seja eficiente e colaborativa?
+
+Desenvolver o algoritmo com foco exclusivo na análise de compatibilidade das músicas, sem considerar a coleta de contribuições ou a montagem da playlist, acreditando que a compatibilidade é o fator mais importante para a coesão.
+ 
+Alternativa incorreta
+Criar um único bloco de algoritmo que processa todas as contribuições de uma vez, utilizando um sistema de votação para determinar quais músicas devem ser incluídas na playlist final, sem a necessidade de etapas intermediárias de análise ou organização, o que pode parecer eficiente à primeira vista.
+ 
+Alternativa incorreta
+Dividir o algoritmo em blocos modulares, começando com um bloco para coleta de contribuições, seguido por um bloco de análise de compatibilidade, um bloco de organização das músicas e, por fim, um bloco de montagem da playlist, permitindo ajustes individuais em cada etapa.
+ 
+Correta, pois essa estrutura modular permite que cada parte do processo seja ajustada ou melhorada individualmente, facilitando a incorporação de novas funcionalidades e garantindo que a playlist final seja coesa e reflita as preferências de todas as participantes.
+Alternativa incorreta
+Estruturar o algoritmo em dois blocos principais: um para coleta de contribuições e outro para montagem da playlist, ignorando a análise de compatibilidade e organização das músicas, o que simplifica o processo, mas pode não atender a todas as necessidades de curadoria.
+
+@@05
+Desafio: Automatizando tarefas
+
+Você está trabalhando como pessoa desenvolvedora júnior em uma equipe que está criando um sistema para auxiliar no controle de presença em eventos online. O time precisa de um algoritmo que processe a lista de participantes e envie um e-mail de agradecimento apenas para quem participou de toda a transmissão ao vivo.
+“Queremos automatizar o envio de agradecimentos. Mas só para quem assistiu à transmissão do início ao fim. Você consegue organizar esse processo em um algoritmo?”
+Utilize os conhecimentos sobre algoritmos para construir uma solução em linguagem natural, com etapas claras e executáveis.
+
+Considere:
+
+Quais são os dados de entrada necessários?
+Como o algoritmo pode verificar a condição de presença completa?
+Que decisão precisa ser tomada com base nesses dados?
+Qual deve ser a ação final?
+Para saber mais detalhes sobre uma solução para esse desafio, clique na Opinião da Pessoa Instrutora.
+
+Uma forma possível de resolver esse desafio é:
+Dados de entrada: lista de participantes com horários de entrada e saída.
+Verificação: comparar se o tempo de permanência corresponde à duração total da transmissão.
+Decisão: se o tempo assistido for igual ou maior ao tempo total do evento, então enviar e-mail.
+Algoritmo (em linguagem natural):
+Para cada participante da lista:
+a. Calcular tempo assistido.
+b. Verificar se o tempo é igual ao tempo total da transmissão.
+c. Se for, enviar e-mail de agradecimento.
+d. Senão, não enviar.
+
+@@06
+Desafio: Calculadora de despesas
+
+Você está desenvolvendo um sistema simples de controle financeiro pessoal. Uma das funcionalidades é permitir que o usuário informe diversas despesas do mês (como mercado, transporte, lazer etc.), e ao final, o sistema deve apresentar o total gasto.
+Sua tarefa é criar um algoritmo, em linguagem natural, que represente a seguinte lógica: o sistema deve somar automaticamente todos os valores informados pelo usuário, sem que ele precise dizer quantas despesas tem. O processo continua até que o valor digitado seja zero. Nesse momento, a soma total deve ser exibida.
+
+Para saber mais detalhes sobre uma solução para esse desafio, clique na Opinião da Pessoa Instrutora.
+
+Podemos começar pedindo ao usuário que informe os valores das despesas, um por um. Cada vez que um valor for digitado, ele é somado a um total acumulado.
+Esse processo deve se repetir até que o usuário digite 0, o que indica que não há mais despesas a registrar. Quando isso acontecer, o sistema deve exibir o total final.
+
+Veja um exemplo de algoritmo em linguagem natural:
+
+Comece com o total igual a 0.
+Solicite um valor de despesa ao usuário.
+Enquanto esse valor for diferente de 0:
+a. Adicione o valor ao total.
+b. Peça o próximo valor.
+Quando o valor informado for 0, mostre o total acumulado.
+Essa lógica é simples e funciona bem em situações em que o número de entradas não é conhecido antecipadamente.
+
+@@07
+Decisão e repetição
+
+Quando analisamos anteriormente a estrutura de um algoritmo utilizando uma escrita de pseudocódigo, destacamos que as sequências são a base dos algoritmos. Temos uma sequência com um conjunto de passos que são realizados um após o outro para realizar uma tarefa específica. Além das sequências, existem outras estruturas que podemos utilizar para organizar de maneira lógica o nosso algoritmo. Essa organização lógica permite que alcancemos nosso objetivo final: criar algoritmos que máquinas sejam capazes de interpretar e executar.
+
+Explorando a tomada de decisões em algoritmos
+Uma das estruturas frequentemente presentes em um algoritmo é a tomada de decisões. No exemplo do café coado, a tomada de decisão ocorre, por exemplo, ao decidir se é o momento de derramar a água sobre o pó de café, o que é feito quando a temperatura da água atinge 90 graus. Enquanto a temperatura não é atingida, a água permanece sendo aquecida no fogão. Essa tomada de decisões ocorre intuitivamente em algoritmos, como na receita de bolo, onde verificamos se o bolo está assado ou se a textura dos ingredientes está adequada, decidindo se precisamos misturar mais. Isso faz parte dos algoritmos passo a passo do nosso cotidiano.
+
+Um exemplo clássico de tomada de decisões no dia a dia é verificar se está chovendo para decidir se levamos um guarda-chuva. Em algumas cidades, o clima pode mudar rapidamente, então consultamos um aplicativo de previsão do tempo. Se houver previsão de chuva, levamos o guarda-chuva; caso contrário, não levamos para evitar carregar peso extra na mochila.
+
+Decidindo se um número é par ou ímpar
+Vamos considerar um caso matemático: queremos decidir se um número informado por um usuário é par ou ímpar. Um número é considerado par quando é divisível por 2. Por exemplo, 4 é par porque 4 dividido por 2 é 2, e o resto é zero. Nesse caso, estamos interessados apenas na divisão inteira. Se dividirmos 5 por 2, o resultado decimal seria 2,5, mas na divisão inteira, obtemos 2 com resto 1. Assim, 4 é par porque o resto é zero, e 9 é ímpar porque 9 dividido por 2 resulta em 4 com resto 1. Todo número ímpar não é divisível por 2, ou seja, o resto é diferente de zero. Esse é o critério de classificação para determinar se um número é par ou ímpar.
+
+Implementando algoritmos com fluxogramas
+Vamos implementar agora um algoritmo utilizando uma representação gráfica, um fluxograma, para demonstrar que podemos representar algoritmos de diferentes maneiras. No fluxograma, temos dois balões elípticos delimitando o início e o fim do algoritmo, e um losango após o início para a leitura do número, que será feita a partir da entrada de um usuário. Por exemplo, podemos inserir o número 7. No losango, temos um ponto de decisão que verifica a condição: o número é divisível por 2? Se inserirmos o número 7, 7 dividido por 2 resulta em 3 com resto 1, indicando que 7 não é divisível por 2. Assim, o algoritmo conclui que o número é ímpar e termina.
+
+Utilizando condicionais em algoritmos
+Observamos que, para tomar essas decisões, precisamos de um condicional, ou seja, uma pergunta que determine qual caminho seguir. No exemplo do café, a pergunta condicional era: a água alcançou a temperatura de 90 graus Celsius? Se não, o bule continua sendo aquecido; se sim, passamos o café. Esse condicional faz parte da estrutura do algoritmo no processo de tomada de decisão lógica. Portanto, é necessário ter um condicional que resulte em verdadeiro ou falso, sim ou não. Um exemplo de condicional é verificar se o número é divisível por 2, resultando em verdadeiro ou falso.
+
+Explorando a repetição de sequências em algoritmos
+Podemos, dentro de uma sequência de um código ou algoritmo, realizar a repetição de sequências. Por exemplo, ao preparar uma lista de compras e ir até um supermercado, para cada item da lista, repetimos um movimento: ir até a prateleira onde o produto se encontra, pegar o produto e colocá-lo no carrinho. Repetimos essa sequência enquanto houver itens na lista de compras que ainda não foram adicionados ao carrinho. Isso é chamado de repetição de blocos, ou loop.
+
+Podemos escrever essa sequência de instruções usando pseudocódigo. Para cada item na lista de compras, iteramos sobre cada componente da lista, riscando ou apagando os itens já incluídos, até passar por todos os corredores e incluir tudo o que é necessário para a compra da semana. Repetimos essa sequência de instruções, o que no mundo dos algoritmos é chamado de loops ou laços de repetição. Se fôssemos escrever cada instrução para cada item, o algoritmo ficaria com um número de instruções gigantesco. Por isso, simplificamos criando um bloco mais simples que itera sobre a lista de compras, procurando cada item e executando a mesma sequência de instruções para cada um. Isso torna a representação mais simples e lógica.
+
+Aplicando loops em algoritmos de adivinhação
+Usamos loops quando precisamos repetir instruções várias vezes. Organizamos isso em um laço de repetição, uma estrutura lógica que permite essa repetição. A sequência será executada até que uma condição seja satisfeita. Nesse caso, a condição é que todos os itens da lista de compras sejam adicionados ao carrinho. Enquanto houver itens não adicionados, continuamos repetindo a sequência de instruções. Após todos serem adicionados, concluímos o bloco de passos.
+
+Podemos pensar também no caso de adivinhar um número entre 1 e 10. Geramos um número secreto aleatoriamente e pedimos um palpite. Enquanto o palpite for diferente do número secreto, lemos o palpite. Se o palpite for maior que o número secreto, damos a dica de tentar um número menor. Se for menor, sugerimos tentar um número maior. Continuamos dando dicas até que a pessoa acerte. Quando acertar, saímos do laço de repetição e exibimos a mensagem "Parabéns, você acertou".
+
+Por exemplo, se o número secreto for 5 e a pessoa chutar 4, entramos no laço de repetição. Se o palpite for 7, exibimos "tente o número menor" e pedimos um novo palpite. Se o palpite for 3, sugerimos "tente o número maior". Quando o palpite for 5, saímos do laço e exibimos "Parabéns, você acertou". Isso é feito usando pseudocódigo em linguagem natural.
+
+Combinando laços de repetição e tomadas de decisão
+Percebemos que executamos diferentes condições e, para cada uma, exibimos uma mensagem e tomamos uma decisão sobre qual caminho seguir, utilizando um laço de repetição. Muitas vezes, ao construir algoritmos, usamos tanto laços de repetição quanto tomadas de decisão de maneira simultânea e concatenada.
+
+Concluindo sobre a lógica de construção de algoritmos
+Agora que entendemos como estruturar algoritmos de maneira lógica, utilizando sequências, laços de repetição, condicionais e tomadas de decisão, podemos avançar explorando mais o mundo da lógica de construção de algoritmos que possam ser interpretados e executados por máquinas como programas de computador.
+
+@@08
+Desafio: Classificando desempenho acadêmico
+
+Você está trabalhando no desenvolvimento de um sistema educacional que precisa exibir mensagens personalizadas para estudantes com base em sua média final. A regra de negócio definida pela equipe pedagógica é a seguinte:
+Média menor que 5,0: mensagem “Você está reprovado.”
+Média entre 5,0 e 6,9: mensagem “Você está de recuperação.”
+Média 7,0 ou mais: mensagem “Parabéns! Você foi aprovado.”
+Sua tarefa é criar um algoritmo em linguagem natural que represente esse processo de verificação e decisão de forma clara, usando estruturas condicionais.
+
+Se quiser saber mais detalhes sobre uma possível solução a esse desafio, clique na Opinião da Pessoa Instrutora.
+
+O sistema deve receber a média final como entrada. Em seguida, ele avalia essa média usando condições encadeadas para decidir qual mensagem exibir.
+Observe um exemplo de algoritmo em linguagem natural:
+
+Solicite a média final do estudante.
+Se a média for menor que 5,0:
+a. Exibir “Você está reprovado.”
+Senão, se a média for menor que 7,0:
+a. Exibir “Você está de recuperação.”
+Senão:
+a. Exibir “Parabéns! Você foi aprovado.”
+Essa lógica garante que apenas uma das mensagens será exibida para cada situação, de forma objetiva e de fácil interpretação.
+
+@@09
+O que aprendemos?
+
+Nesta aula, aprendemos:
+A elaboração prática de algoritmos utilizando exemplos do cotidiano.
+A criação de algoritmos em linguagem natural estruturando instruções precisas.
+A importância da precisão e clareza na elaboração de algoritmos.
+A estruturação de algoritmos em linguagem natural como pseudocódigos.
+A modularização de algoritmos por meio da divisão em blocos.
+O uso de estruturas lógicas como condicionais e laços de repetição em algoritmos.
+A introdução ao uso de fluxogramas para representar algoritmos.
+A implementação de loops e condicionais para construção de algoritmos de forma lógica.
