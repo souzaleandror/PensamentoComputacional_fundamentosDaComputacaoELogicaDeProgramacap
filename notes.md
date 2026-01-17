@@ -247,3 +247,247 @@ O papel das equipes de software no desenvolvimento, teste e manutenção de apli
 O conceito de computação pervasiva.
 O conceito de pensamento computacional para resolver problemas de forma lógica.
 
+#14/01/2026
+
+@02-Explorando o pensamento computacional
+
+@@01
+Decompondo problemas
+
+Agora é o momento de aprofundarmos nossa compreensão sobre a abordagem do pensamento computacional e como aplicá-la no dia a dia, seja no mundo do software, em outros setores nos quais atuamos, ou até mesmo em atividades cotidianas em casa. Podemos adotar essa abordagem de pensamento computacional em diversas situações. O primeiro passo nessa abordagem é a decomposição dos problemas, ou seja, das demandas.
+
+Por que atuamos na decomposição desses problemas? As demandas surgem de maneira bruta, misturando múltiplas questões e perspectivas. Isso significa que, quando recebemos uma demanda para construir uma solução, não temos um desenho claro das funcionalidades que devem estar presentes. Por exemplo, ao receber a demanda de criar um editor de texto, podemos interpretá-lo como algo simples, como um bloco de notas, ou algo mais complexo, como um Word ou LibreOffice Writer, que é um software de edição de texto open source.
+
+Aplicando a decomposição de problemas
+Como transformamos essa demanda bruta em uma demanda mais elaborada para que possamos, com nosso time, implementar a solução? Fazemos isso através da decomposição, que significa dividir o problema em partes menores. Isso nos proporciona uma compreensão mais simplificada, melhora a comunicação entre todos os integrantes do time e traz mais clareza na obtenção de uma solução adequada.
+
+Ao dividir um problema, transformamos algo grande, como a demanda de construir um editor de texto, em várias tarefas menores. Por exemplo, podemos implementar uma função no front-end que permita ao usuário mudar a cor da fonte, definindo quais cores estarão disponíveis no back-end. Da mesma forma, no back-end, implementamos opções de formatação, como centralizado, justificado, à direita ou à esquerda, permitindo que o usuário escolha o estilo preferido para o texto.
+
+Exemplificando a decomposição em atividades cotidianas
+Para não nos perdermos no processo de desenvolvimento, que muitas vezes envolve múltiplas funcionalidades simultaneamente, decompomos em tarefas menores. Um exemplo cotidiano seria a faxina em casa. Após semanas sem limpeza, podemos nos sentir perdidos sobre por onde começar. Uma solução é dividir o objetivo maior em tarefas menores: começar pelo banheiro, depois o quarto, limpar o armário, e assim por diante. Podemos até dividir essas tarefas em dois ou três dias, como em um fim de semana ou feriado prolongado, para realizá-las com tranquilidade e ainda ter tempo para lazer e entretenimento.
+
+Em um caso prático, podemos melhorar nossa rotina de estudo. Ao lidar com problemas, podemos listar os objetivos de aprendizagem, ou seja, as competências que desejamos desenvolver.
+
+Planejando a rotina de estudos com pensamento computacional
+Se estamos começando no mundo da programação, é essencial entender o pensamento computacional, compreender como o computador funciona e dar os primeiros passos no uso de uma linguagem de programação, seja C#, Python ou Java. Teremos alguns objetivos de aprendizagem, que podem ser sequenciais ou até mesmo paralelos em alguns momentos.
+
+Precisamos identificar nossos horários disponíveis, pois não adianta estipularmos que vamos estudar três horas por dia se só temos uma hora e trinta minutos disponíveis. Assim, não atenderemos a essa demanda. Devemos definir nossas prioridades e metas de estudo e, a partir daí, criar um cronograma factível, sempre estabelecendo metas de aprendizagem. Por exemplo, podemos querer concluir um curso até a semana que vem para atingir esses objetivos e seguir para a próxima sequência de metas listadas, seguindo nosso cronograma. Nossa prioridade pode ser nos tornarmos capazes de construir back-end de aplicações usando uma determinada linguagem.
+
+Decompondo problemas em desenvolvimento de software
+Este é um caso prático: temos um objetivo, uma demanda, um problema, e o dividimos em partes menores para que possamos resolvê-lo, evitando ficar apenas no campo da intenção sem chegar a uma solução. No caso prático de um software, por exemplo, podemos desejar criar uma funcionalidade de login em um website. Essa demanda pode ser decomposta em pequenas partes, como identificar quais dados o sistema precisa coletar para fazer o login do usuário e planejar como o sistema fará a verificação desses dados. Alguns dados são criptografados, então precisamos considerar como será a descriptografia.
+
+Como são múltiplos problemas dentro de um problema maior, precisamos dividi-los para resolvê-los adequadamente. Devemos decidir o que acontece em caso de erro, como quando um usuário não corresponde à senha, e planejar o que ocorre após o login ser realizado com êxito. Nem tudo precisa ser resolvido de uma vez ao implementar o login de um website. Decompor é identificar as partes que serão resolvidas separadamente.
+
+Aproveitando soluções existentes
+Uma das vantagens desse processo de decomposição, especialmente na construção de softwares, é que algumas soluções existentes para problemas específicos podem ser reaproveitadas. Assim, evitamos o retrabalho de construir algo que já está disponível na comunidade de uma determinada linguagem, seja uma biblioteca ou um framework. Esses termos técnicos ficarão mais claros ao longo da nossa jornada de aprendizado no mundo da tecnologia.
+
+Hoje, aprendemos que, ao decompor um problema, temos uma demanda grande que chega de forma bruta. Nós a decompomos em pequenos problemas, em pequenas partes, para que possamos resolver cada um de acordo com a equipe, cronograma, metas e prioridades. Em alguns casos, podemos até mesmo utilizar ou adaptar soluções existentes para acelerar ou agilizar a solução dessas pequenas partes do problema maior.
+
+Encerramos por aqui. Até a próxima.
+
+@@02
+Para saber mais: Pensamento computacional vai além da tecnologia
+
+O pensamento computacional pode ser aplicado em qualquer contexto que envolva organização, análise e solução de problemas.
+Na educação, ajuda a estruturar aulas e projetos. Na saúde, apoia a criação de protocolos e rotinas de atendimento. Em logística, permite organizar rotas e processos. No marketing, contribui para planejar campanhas e testar estratégias.
+
+Sempre que você divide um problema em partes, identifica padrões ou cria um passo a passo, está pensando computacionalmente.
+Repare nas situações do seu cotidiano em que você já pensa dessa forma e reflita sobre como essa abordagem pode ser aplicada em muitas áreas para otimizar a realização de tarefas.
+
+@@03
+Reconhecendo padrões
+
+Após decompormos nosso problema maior em pequenas partes para conseguirmos resolvê-lo passo a passo, com o tempo e recursos disponíveis, é o momento de buscar o reconhecimento de padrões. O que é esse reconhecimento de padrões? Trata-se de identificar algumas semelhanças entre as diferentes partes do problema.
+
+Por que buscamos essas semelhanças? Vamos considerar um caso prático, como um setor de atendimento ao cliente. Nesse setor, muitas questões costumam se repetir. O que podemos fazer? Será que devemos direcionar nosso time para responder essas questões repetitivas da mesma forma todos os dias? Não. Devemos reconhecer padrões de questões comuns e criar um banco de respostas para esses padrões, permitindo que possamos reutilizá-las, automatizando o processo de respostas e ganhando produtividade.
+
+Implementando soluções automatizadas
+Dessa forma, conseguimos, por exemplo, construir um chatbot que auxilia na triagem de algumas questões antes de demandar a intervenção de uma pessoa do setor de atendimento ao cliente. Às vezes, trata-se de uma questão simples, um passo a passo que a pessoa usuária não entendeu corretamente. Um chatbot pode listar e explicar de forma didática, levando a pessoa a perceber o que estava faltando. Ela testa, verifica e não precisa da presença de um analista ou agente de atendimento para ajudar. Com isso, poupamos recursos.
+
+Reconhecer padrões é automatizar e contribuir para o ganho de produtividade. Ao mesmo tempo, se estamos desenvolvendo uma solução e buscamos por soluções já existentes, podemos reconhecer padrões, entender como essas soluções resolveram partes similares do problema e encaminhar soluções semelhantes. Assim, reutilizamos conhecimentos prévios e agilizamos o processo de construção da solução.
+
+Reutilizando soluções no desenvolvimento de software
+No mundo do software, isso ocorre frequentemente. Muitas funcionalidades que implementamos seguem lógicas semelhantes. Podemos reutilizar ou adaptar soluções já existentes, criando estruturas reutilizáveis, até mesmo dentro de uma empresa.
+
+Às vezes, trabalhamos em um projeto de uma aplicação específica que pode ter algumas partes semelhantes às de outro time que está atendendo a uma aplicação de outro cliente. Podemos reutilizar essas partes, poupando tempo, melhorando a produtividade e agilizando a entrega da nossa solução.
+
+Criando websites com padrões reutilizáveis
+Na implementação de um website, por exemplo, se quisermos criar um blog para postar sobre nossa jornada de aprendizado no mundo da tecnologia, não precisamos construir um website do zero. Não é necessário aprender a programar todo o front-end para implementar cada componente, como botões, campos para inserir novas postagens ou campos de comentários. O que podemos fazer é dividir o problema grande, que é criar um website, em pequenas partes. Queremos uma seção para postar artigos, outra para códigos e uma seção para interação, como um mini-fórum para os visitantes do blog.
+
+A partir desses pequenos problemas, podemos reconhecer alguns padrões. Identificamos websites, projetos abertos ou padrões de websites que oferecem templates e ferramentas para construir blogs de forma simples e rápida. Não precisamos desenvolver tudo; podemos utilizar um padrão. O Google Sites, por exemplo, é uma ferramenta que nos permite criar websites pessoais na internet de maneira ágil, reutilizando componentes e adaptando-os às funcionalidades desejadas no nosso website.
+
+Aplicando conhecimentos prévios e práticas anteriores
+Com a decomposição do problema, conseguimos reconhecer padrões entre as pequenas partes, comparando com outros projetos e soluções já existentes. Podemos aplicar conhecimentos prévios, experimentos e práticas anteriores, considerando tanto resultados positivos, que valem a pena ser utilizados, quanto resultados negativos, que indicam caminhos a evitar. Isso nos ajuda a abordar soluções mais promissoras para cada uma das pequenas partes e demandas que enfrentamos.
+
+Da mesma forma, podemos pensar em problemas práticos do dia a dia. Se quisermos consertar um vazamento em casa, podemos dividir o problema em pequenas partes, reconhecer padrões e procurar soluções ou descrições de soluções existentes na internet. Após o reconhecimento de padrões, qual é o próximo passo? Vamos ver na sequência.
+
+@@04
+Utilizando abstração
+
+Nossa abordagem de pensamento computacional começa com a decomposição de um problema grande em partes menores. A partir dessa decomposição, buscamos reconhecer padrões entre essas pequenas partes ou até mesmo entre essas partes e soluções já existentes. Isso nos permite reutilizar conhecimentos e experiências prévias, agilizando a busca por uma solução mais eficiente para o problema que estamos abordando. Essa abordagem é aplicável tanto no mundo do software quanto no mundo médico, como no caso de um diagnóstico clínico, ou até mesmo na solução de um vazamento em casa. Por exemplo, ao identificar uma infiltração, podemos reconhecer um padrão que indica que o problema vem do apartamento de cima. Com o reconhecimento de padrões, conseguimos encaminhar uma solução mais pertinente para o problema.
+
+Explorando a abstração no transporte urbano
+O próximo passo, ou terceira etapa dessa abordagem de pensamento, é a abstração. A abstração pode causar dúvidas, mas não é tão complexa quanto parece. Vamos a um exemplo prático: ao chegar em uma cidade grande como São Paulo, uma das primeiras preocupações é como se locomover de um ponto a outro. Uma forma de fazer isso, se estamos próximos ou não tão próximos de estações de metrô e queremos percorrer grandes distâncias em pouco tempo, é utilizando o sistema de transporte sob trilhos, como metrô, trem, ou até mesmo corredores de ônibus integrados a esses sistemas. Para utilizar esse sistema, precisamos entender como os diferentes modais estão integrados, qual estação entrar, onde fazer integração com outra linha de metrô e, eventualmente, pegar um ônibus, de acordo com o ponto de saída e destino.
+
+Uma maneira de identificar essa rota mais facilmente é utilizando uma abstração presente em muitos sites e estações de metrô: o mapa dos meios de transporte da região metropolitana. Esse mapa não segue exatamente a geografia da cidade e não inclui informações geográficas como ruas e avenidas ao redor das estações. Ele apresenta um mapa com cores designando as diferentes linhas de metrô e trem, suas estações e a direção que seguem (sul, norte, leste ou oeste). Detalhes que podem ser importantes são ocultados dessa representação. Isso é uma prática de abstração: destacamos apenas as informações relevantes para a demanda do usuário, que é identificar a estação atual, a estação de destino e o caminho a seguir. Se o mapa incluísse muitas informações geográficas, seria complexo e as pessoas levariam muito tempo para entender, muitas vezes precisando de ajuda para saber onde embarcar e desembarcar. Com essa representação abstraída do sistema de transporte metropolitano, conseguimos nos locomover de maneira ágil e simples. Mesmo pessoas sem muita experiência com esse tipo de modal conseguem, com uma ajuda prévia, transitar pela cidade com facilidade.
+
+Aplicando a abstração no cotidiano e no software
+Outro exemplo prático de abstração presente no nosso dia a dia é fazer um café coado ao acordar. Ao preparar o café, ignoramos detalhes como o processo de fervura da água ou como o café é moído. Utilizamos o café moído padrão vendido em supermercados e padarias, colocamos a quantidade de pó de acordo com o número de xícaras desejadas, fervemos a água até aparecerem as primeiras bolhas no fundo do bule, apagamos o fogo e passamos o café.
+
+Quando criamos um conjunto mental de passos chamado "fazer café", abstraímos uma série de detalhes do dia a dia. Não paramos para pensar em como a água ferve ou como o café foi moído. Seguimos um padrão, independentemente do tipo de café utilizado. Claro, algumas pessoas são mais exigentes e seguem diferentes caminhos de acordo com o café que está sendo utilizado. Abstrair é ocultar a complexidade de uma atividade e expor apenas o necessário para realizá-la. Focamos no essencial e criamos representações simplificadas, como no caso do mapa de transporte metropolitano ou do passo a passo mental de como fazer um café coado. Isso facilita a organização e criação de grandes sistemas.
+
+No mundo do software, ao abstrair, lidamos com um conjunto grande de funcionalidades. Como implementar essas funcionalidades? O computador precisa interpretar isso como uma operação lógica ou aritmética. Abstraímos e focamos apenas no essencial. Muitas vezes, as próprias linguagens que utilizamos para implementar instruções fazem abstrações para permitir que foquemos na construção da funcionalidade. Com isso, conseguimos criar e escalar grandes sistemas.
+
+Utilizando abstração em aplicações web e hardware
+Por exemplo, ao criar uma aplicação web, podemos pensar numa abstração comum: o botão de enviar. Ele é usado em várias partes da aplicação, mas com diferentes objetivos. Podemos enviar dados para o banco de dados, uma solicitação de atendimento ao cliente, ou um artigo por e-mail. O botão de enviar é uma abstração; sua aparência e comportamento básico estão prontos, mas a funcionalidade depende do contexto em que o inserimos na aplicação.
+
+A abstração nos permite transformar partes complexas de um problema em blocos de fácil entendimento e reutilização. Utilizamos muito esse recurso ao trabalhar com hardware. Os recursos de hardware são gerenciados de forma simples por meio da abstração. Imagine um computador com muitos circuitos eletrônicos. Como gerenciar o uso desses circuitos por diferentes softwares em execução simultânea? Utilizamos recursos de abstração para realizar isso de forma simples. O sistema operacional, que gerencia os recursos de hardware, abstrai o funcionamento dos circuitos eletrônicos, permitindo que foquemos no essencial: utilizar interfaces amigáveis para interagir com diferentes aplicações simultaneamente.
+
+Hoje em dia, é comum utilizarmos várias aplicações simultâneas no ambiente de trabalho, como Teams, um banco de dados, um dashboard, um editor de texto e uma planilha eletrônica. Fazemos isso usando apenas um único hardware por meio da abstração, fornecida pelo sistema operacional. A abstração está muito presente no mundo da computação.
+
+Explorando a abstração em ambientes de nuvem
+Por exemplo, ao lidar com aplicações em ambiente de nuvem ou infraestrutura local, utilizamos a abstração para que a mesma infraestrutura execute múltiplas aplicações, armazene e hospede múltiplos websites simultaneamente, permitindo que diferentes usuários acessem essas aplicações. A abstração é essencial no nosso dia a dia e, principalmente, no mundo da computação.
+
+@@05
+Elaborando algoritmos
+
+Nessa jornada pela abordagem do pensamento computacional e como podemos utilizá-la na resolução de problemas do dia a dia, seja no mundo da computação ou em tarefas cotidianas envolvendo dispositivos físicos, passamos por três etapas. Primeiro, abordamos a decomposição de um problema em partes menores. Em seguida, discutimos o reconhecimento de padrões, que nos permite reutilizar soluções já existentes e adaptar ou aplicar conhecimentos prévios para resolver essas pequenas partes. Por fim, no último vídeo, exploramos a abstração, que nos ajuda a focar no essencial e a deixar de lado, temporariamente, a complexidade envolvida no funcionamento dos sistemas com os quais lidamos, como, por exemplo, o hardware de um computador, que, como pessoas desenvolvedoras, às vezes não precisamos nos preocupar tanto.
+
+Agora, chegamos à etapa final desse pensamento: a concepção de um passo a passo que nos permitirá solucionar o problema maior que enfrentamos inicialmente. Para entender melhor como concebemos esse passo a passo, vamos pensar em um caso simples. Estamos desenvolvendo uma solução para o nosso café da manhã: uma máquina que faz café coado de acordo com o pó inserido, seja ele extraforte, tradicional ou com uma torra especial. Precisamos ajustar a temperatura da água e o movimento circular sobre o pó, além de permitir ao usuário dosar a quantidade de xícaras, seja uma única xícara ou uma mini garrafa térmica com três xícaras, por exemplo, para receber alguém em casa.
+
+Concebendo algoritmos para soluções práticas
+Como construímos essa máquina? Precisamos desenvolver um conjunto de instruções que, a partir da interação do usuário com os botões físicos da máquina, permita executar a ação de passar o café de acordo com o pó e a quantidade de xícaras desejada. Fazemos isso concebendo o que chamamos de algoritmo. Um algoritmo é uma sequência finita de instruções para resolver um determinado problema. Assim como falamos sobre decompor um problema maior em problemas menores, cada problema menor pode ser resolvido com uma sequência finita de instruções.
+
+Todo algoritmo possui um começo, um meio e um fim: uma instrução inicial, algumas instruções intermediárias e a instrução final, que será o resultado gerado pela execução dessa sequência de passos. Cada passo deve ser claro, objetivo e executável, permitindo que uma máquina o execute sem dúvidas, alcançando o resultado final desejado.
+
+Comparando algoritmos com receitas culinárias
+Podemos representar algoritmos de diferentes formas no nosso dia a dia. Vamos considerar um exemplo familiar: fazer um bolo. Precisamos seguir uma receita, que é uma sequência ordenada de passos a serem seguidos do começo ao fim, exatamente nessa ordem. Se invertermos a ordem, o resultado não será satisfatório. As instruções devem ser claras, como "assar por 40 minutos a 200 graus Celsius". Se apenas indicássemos "assar a 200 graus Celsius" sem especificar a duração, a pessoa fazendo o bolo poderia ficar em dúvida. Portanto, as instruções precisam ser muito precisas, incluindo até mesmo instruções condicionais.
+
+Após decorridos 20 minutos, devemos abrir o forno e verificar os aspectos do bolo, pois o forno pode ter características diferentes que permitam assar mais rapidamente. Podemos incluir condicionais nessa sequência de passos para garantir que, independentemente do forno, da cozinha ou da pessoa que estiver executando a tarefa de fazer um bolo, consigamos atingir um resultado repetível. Ou seja, todas as pessoas conseguiriam fazer o mesmo bolo, com características gerais semelhantes.
+
+Aplicando algoritmos em diferentes contextos
+Vamos fazer um paralelo entre um algoritmo e uma receita de bolo. Uma receita de bolo orienta cada passo para chegar ao resultado final. O algoritmo também descreve instruções, mas utiliza muita lógica e precisão para resolver um problema, pois, no caso de um algoritmo, desejamos que uma máquina seja capaz de resolver esse problema.
+
+Podemos aplicar essa abordagem do pensamento computacional, resultando em um algoritmo, no caso da montagem de um móvel, que já abordamos anteriormente. Primeiro, ao receber o móvel em uma caixa cheia de componentes, parafusos e itens de fixação, devemos decompor o problema maior em etapas menores. Por exemplo, ao montar uma mesa, identificamos o pé, o tampo, o rodízio e outras partes, como compartimentos para guardar objetos.
+
+Organizando instruções para montagem de móveis
+Reconhecemos padrões e identificamos partes que seguem o mesmo modo de montagem, permitindo que executemos tarefas simultaneamente para agilizar o processo. Podemos agrupar ações em etapas com o mesmo significado, como montar o tampo primeiro e executar todas as tarefas relativas à montagem do tampo, do pé ou do rodízio.
+
+Dentro de cada etapa, organizamos as instruções necessárias para a concretização de forma lógica. Não unimos partes sem antes aplicar cola e itens de fixação. Há uma ordem lógica e precisa para realizar a montagem adequadamente.
+
+Transformando ideias em instruções executáveis
+Os algoritmos descrevem esse passo a passo para realizar uma tarefa, seja montagem de móveis, uma receita de bolo ou uma funcionalidade em um site. Cada passo deve ser preciso, claro, executável e ordenado, garantindo que uma máquina ou pessoa consiga realizar a tarefa sem dúvidas.
+
+Usando algoritmos, transformamos ideias de solução em instruções compreensíveis por máquinas, permitindo criar, por exemplo, uma máquina de fazer café coado. Muitas funcionalidades em aplicativos web ou móveis têm algoritmos por trás, com sequências de instruções que, a partir de um clique ou requisição da pessoa usuária, executam etapas de processamento. Esses algoritmos implementam regras de negócio dentro de soluções de software.
+
+Concluindo a aplicação do pensamento computacional
+Agora que vimos um pouco sobre o pensamento computacional e sua aplicação no dia a dia, não apenas no mundo da computação, mas em diferentes setores produtivos, é hora de colocarmos esse pensamento em ação, focando mais no mundo da tecnologia e da computação. Vamos prosseguir?
+
+@@06
+Implementando um sistema de pedidos
+
+O Serenatto Café & Bistrô, que oferece uma variedade de refeições e bebidas, decidiu implementar um sistema de pedidos online para atender à crescente demanda por conveniência dos clientes.
+Considerando a necessidade de decompor o problema de implementação desse sistema, quais seriam as partes principais a serem identificadas para garantir que o sistema atenda às necessidades dos clientes?
+
+Focar apenas na criação de uma interface de usuário atraente e intuitiva, sem se preocupar inicialmente com a integração de sistemas de pagamento ou banco de dados, pois a experiência visual é o mais importante para os clientes. Além disso, considerar a implementação de animações e transições suaves para melhorar a experiência do usuário, mesmo que isso signifique adiar a integração de funcionalidades críticas.
+ 
+Alternativa incorreta
+Identificar os requisitos do sistema, como exibir o menu, aceitar pedidos, processar pagamentos e enviar confirmações; dividir o sistema em componentes como interface do usuário, sistema de pagamento, banco de dados de pedidos e sistema de notificação; listar funcionalidades específicas para cada componente e realizar testes de usabilidade e segurança.
+ 
+Correta, pois essa abordagem cobre todas as etapas essenciais para garantir que o sistema de pedidos online seja funcional, seguro e atenda às necessidades dos clientes, desde a identificação de requisitos até a realização de testes.
+Alternativa incorreta
+Concentrar-se na implementação de um sistema de notificação robusto que informe os clientes sobre o status de seus pedidos, sem a necessidade de um banco de dados centralizado para gerenciar os pedidos. Além disso, considerar o uso de notificações push para manter os clientes atualizados em tempo real, mesmo que isso signifique comprometer a gestão centralizada dos pedidos.
+ 
+Alternativa incorreta
+Desenvolver um sistema de pedidos online que priorize a integração com redes sociais para aumentar a visibilidade do café, deixando a implementação de funcionalidades de pagamento e notificações para uma fase posterior. Adicionalmente, criar campanhas de marketing digital para promover o sistema de pedidos online, mesmo que isso signifique adiar a implementação de funcionalidades essenciais.
+
+@@07
+Otimizando buscas
+
+A Buscante, um buscador e e-commerce de livros variados, está buscando maneiras de otimizar a experiência de compra de seus usuários. A equipe de desenvolvimento que você faz parte foi encarregada de analisar os padrões de compra dos clientes para sugerir livros de forma mais eficiente. A ideia é decompor o problema de recomendação em partes menores, identificar padrões de compra e reutilizar soluções já existentes para melhorar o sistema de recomendação.
+Qual seria a melhor abordagem para melhorar as recomendações de livros na Buscante?
+
+Decompor o problema em partes menores, como histórico de compras, avaliações e categorias populares, identificar padrões de compra frequentes e adaptar algoritmos de recomendação existentes para sugerir livros com base em compras anteriores e interesses similares de outros usuários.
+ 
+Correta, pois essa abordagem utiliza o reconhecimento de padrões ao decompor o problema, identificar padrões de compra e adaptar algoritmos existentes, o que é eficaz para melhorar as recomendações de livros.
+Alternativa incorreta
+Focar exclusivamente em desenvolver um novo algoritmo de recomendação do zero, sem considerar o histórico de compras ou padrões de compra existentes, para garantir uma solução totalmente personalizada para a Buscante, mesmo que isso signifique ignorar dados valiosos que poderiam ser utilizados para otimizar o processo de recomendação e reduzir o tempo de implementação.
+ 
+Alternativa incorreta
+Implementar um sistema de recomendação baseado exclusivamente em categorias populares, sem decompor o problema ou identificar padrões de compra, para simplificar o processo de recomendação, mesmo que isso signifique sacrificar a precisão e a relevância das recomendações, que são fundamentais para atender às expectativas dos usuários e aumentar a taxa de conversão.
+ 
+Alternativa incorreta
+Analisar apenas as avaliações dos livros para determinar quais são os mais populares e recomendá-los indiscriminadamente a todos os usuários, sem considerar o histórico de compras ou interesses específicos, o que pode levar a uma experiência de compra menos personalizada e potencialmente frustrante para os usuários que buscam recomendações alinhadas aos seus interesses pessoais e hábitos de leitura.
+
+@@08
+Abstraindo complexidade
+
+A Freelando, plataforma digital que conecta freelancers a contratantes, está desenvolvendo uma nova funcionalidade para facilitar a navegação das pessoas usuárias entre diferentes projetos e propostas. A equipe de design que você faz parte precisa criar uma interface que abstraia a complexidade dos dados apresentados, destacando apenas as informações essenciais para as pessoas usuárias.
+Qual seria a melhor solução para criar uma interface de usuário eficiente na Freelando?
+
+Ocultar detalhes complexos e destacar informações essenciais através de um design claro e conciso, utilizando ícones e cores para diferenciar tipos de projetos e status de propostas, além de oferecer filtros e opções de busca.
+ 
+Correta, pois essa abordagem aplica o conceito de abstração ao ocultar informações desnecessárias e destacar o essencial, tornando a interface mais intuitiva e fácil de usar, melhorando a experiência da pessoa usuária.
+Alternativa incorreta
+Utilizar um design minimalista que remova todos os elementos visuais, focando apenas em texto para apresentar informações sobre projetos e propostas, sem considerar o impacto visual e a necessidade de elementos gráficos que auxiliem na rápida identificação de informações.
+ 
+Alternativa incorreta
+Apresentar todas as informações disponíveis sobre projetos e propostas em uma única tela, permitindo que as pessoas usuárias escolham o que é relevante para elas, mas sem qualquer categorização ou hierarquia visual que ajude na priorização dos dados, o que pode levar a uma sobrecarga cognitiva.
+ 
+Incorreta, pois essa abordagem não aplica o conceito de abstração, já que sobrecarrega a pessoa usuária com informações excessivas, dificultando a navegação e a identificação do que é realmente importante, além de não oferecer uma estrutura que facilite a compreensão imediata.
+Alternativa incorreta
+Criar uma interface que exiba apenas os projetos mais recentes, ocultando informações sobre propostas e mensagens para simplificar a visualização, mas sem considerar a importância de manter um equilíbrio entre simplicidade e a necessidade de acesso rápido a dados críticos.
+ 
+Incorreta, pois essa abordagem não destaca todas as informações essenciais, como propostas e mensagens importantes, o que pode prejudicar a experiência da pessoa usuária ao não fornecer uma visão completa e relevante, além de não permitir uma interação eficiente com todos os aspectos do projeto.
+
+@@09
+Desafio: organizando o suporte ao cliente
+
+Você foi contratado como analista em uma empresa de tecnologia e recebeu a seguinte demanda do time de Customer Success (Sucesso do Cliente):
+“Precisamos melhorar a forma como lidamos com os pedidos de suporte dos usuários. As mensagens chegam com vários problemas misturados, como dificuldades para acessar o sistema, dúvidas sobre pagamento ou erros no uso de funcionalidades. Está tudo confuso e difícil de responder de forma ágil.”
+Utilize os principais fundamentos do pensamento computacional para propor um plano que ajude a organizar e automatizar o atendimento. Considere:
+
+Como decompor o problema?
+É possível reconhecer padrões nos pedidos?
+Que tipo de abstrações pode ser criadas para simplificação do fluxo?
+É viável criar um algoritmo para lidar com cada tipo de solicitação?
+Se quiser saber mais detalhes sobre uma possível solução a esse desafio, clique na Opinião da Pessoa Instrutora.
+
+Opinião do instrutor
+
+Uma forma possível de resolver esse desafio é:
+Decomposição: separar os atendimentos em categorias (acesso, pagamento, uso da plataforma).
+Padrões: identificar que muitas dúvidas se repetem em cada categoria.
+Abstração: criar modelos de resposta ou uma FAQ automática.
+Algoritmo: montar um fluxo de decisão simples para atendimento: “Recebeu mensagem → Identifica categoria → Verifica se há resposta padrão → Envia ou encaminha.”
+
+@@10
+Desafio: automatizando processos na equipe de RH
+
+Você está atuando como analista em um projeto com o time de Recursos Humanos de uma empresa. A equipe está sobrecarregada porque precisa, toda semana, organizar entrevistas com candidatos, enviar e-mails de confirmação e montar uma agenda com todos os horários.
+“Estamos gastando muito tempo com tarefas repetitivas. Será que dá pra facilitar esse processo?”
+Utilize a abordagem de pensamento computacional para propor um plano que ajude a automatizar esse fluxo e reduzir o esforço manual.
+
+Se quiser saber mais detalhes sobre uma possível solução a esse desafio, clique na Opinião da Pessoa Instrutora.
+
+Uma forma possível de resolver esse desafio é começar pela decomposição do processo. Podemos dividir a tarefa principal organizar entrevistas em etapas menores, como: coletar a disponibilidade dos candidatos, enviar os convites, receber as confirmações e montar a agenda final. Essa divisão ajuda a entender melhor cada parte do fluxo e identificar onde há gargalos ou tarefas repetitivas.
+Em seguida, é importante observar os padrões. O processo de entrevista tende a seguir sempre a mesma sequência: primeiro o contato com o candidato, depois a resposta, a confirmação e, por fim, a reserva do horário. Reconhecer esse padrão permite pensar em soluções reutilizáveis e padronizadas.
+
+Ao aplicar a abstração, podemos representar esse conjunto de etapas como um processo único, usando uma ferramenta de agendamento automático. Isso inclui, por exemplo, o envio de e-mails com links para escolha de horário e a integração com um calendário compartilhado. Assim, ocultamos os detalhes técnicos e deixamos visível apenas o necessário para que o processo funcione de forma simples e clara.
+
+Por fim, podemos pensar em um algoritmo, ou seja, uma sequência ordenada de passos para automatizar esse fluxo:
+
+Receber a lista de candidatos → Enviar e-mail com link de agendamento → Confirmar horário escolhido → Atualizar agenda da equipe → Enviar lembrete automático antes da entrevista.
+Essa abordagem ajuda a organizar o trabalho de forma lógica, otimiza o tempo do time de RH e torna o processo mais ágil e escalável.
+
+@@11
+O que aprendemos?
+
+Nesta aula, aprendemos:
+A decomposição de problemas para facilitar a resolução e comunicação.
+O reconhecimento de padrões para otimizar soluções e aumentar a produtividade.
+A reutilização de soluções existentes através de bibliotecas e frameworks.
+A importância da abstração para ocultar complexidade e destacar informações relevantes.
+A função dos algoritmos como sequência de instruções claras para resolver problemas.
+O papel da abstração na gestão de recursos de hardware e computação em nuvem.
+A aplicação prática de algoritmos em programação e atividades cotidianas.
