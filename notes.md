@@ -754,3 +754,492 @@ A modularização de algoritmos por meio da divisão em blocos.
 O uso de estruturas lógicas como condicionais e laços de repetição em algoritmos.
 A introdução ao uso de fluxogramas para representar algoritmos.
 A implementação de loops e condicionais para construção de algoritmos de forma lógica.
+
+#16/01/2026
+
+@04-Lógica de Programação
+
+@@01
+Variáveis e operações
+
+Voltando à análise da estrutura de algoritmos, nosso objetivo é entender como podemos organizar os algoritmos de maneira cada vez mais lógica, de forma que dispositivos computacionais, como nossos computadores, consigam realizar as instruções que estamos descrevendo em cada uma delas.
+
+Vamos retomar o algoritmo de avaliação para determinar se um número é par ou ímpar, que foi representado na forma de um fluxograma. Essa é uma maneira de representar algoritmos em um nível mais alto, utilizando uma linguagem mais próxima da nossa linguagem natural, mais compreensível para pessoas.
+
+Explorando o algoritmo de par ou ímpar
+Nesse algoritmo, já observamos que no losango central há uma pergunta: "O número é divisível por 2?". Temos um condicional e, a partir desse teste de condição, avaliamos se a condição é verdadeira ou falsa, ou seja, sim ou não. Com base nessa avaliação, seguimos por caminhos diferentes. Se for verdadeira, o número será par; se for falsa, o número será ímpar.
+
+Para ilustrar isso, podemos ver o seguinte trecho de código que representa a lógica de verificar se um número é par ou ímpar:
+
+// No caso do algoritmo ímpar/par
+Divisão inteira: Número ÷ 2
+Se resto = 0 -> Número é par
+COPIAR CÓDIGO
+Compreendendo o uso de variáveis
+Além disso, temos outros elementos que ainda não avaliamos, como a entrada. A leitura do número faz o quê? Ela lê o número informado, eventualmente, por uma pessoa usuária do nosso algoritmo, que é parte do nosso mini sistema. Essa entrada será uma variável no algoritmo. Por que chamamos de variável? Porque ela varia de acordo com a interação da pessoa usuária com o algoritmo.
+
+Na estrutura de um algoritmo, sempre teremos uma ou mais variáveis. Algumas são informadas pela pessoa usuária, enquanto outras são usadas como parâmetros para a execução do algoritmo. Essa variável armazena, como se fosse uma caixa na memória do dispositivo que está executando o algoritmo, um conteúdo que pode ser alterado ao longo do tempo. No exemplo do algoritmo de par ou ímpar, será o número informado pela pessoa usuária.
+
+Exemplificando o uso de variáveis em algoritmos
+No caso anterior, do café, tínhamos outras variáveis envolvidas, como o termo quantidade. No pseudo código, mencionamos que a quantidade seria igual ao número de xícaras vezes colher. Ou seja, informávamos ao algoritmo o número de xícaras de café que pretendíamos fazer para calcular a quantidade de pó de café a ser adicionada no passo seguinte do algoritmo. Portanto, quantidade também é uma variável, uma caixa na memória do dispositivo que executa o algoritmo, armazenando um determinado valor. Neste caso, é o número de colheres de café, um número inteiro, como duas, três, quatro ou cinco colheres. Da mesma forma, no algoritmo de par ou ímpar, também lidamos com números inteiros.
+
+Podemos ver isso no seguinte trecho de código:
+
+// Adicionar pó de café
+quantidade = número de xícaras * colher
+adicionar(pó de café, quantidade, filtro de papel)
+COPIAR CÓDIGO
+Trabalhando com diferentes tipos de dados
+Nos problemas apresentados, identificamos que, ao executar algoritmos, podemos lidar com diferentes tipos de dados. Por exemplo, podemos trabalhar com dados textuais. Se tivéssemos um algoritmo mais complexo que nos ensinasse a preparar diferentes tipos de café, como café coado ou expresso, precisaríamos de um condicional no início para perguntar ao usuário qual tipo de café ele deseja. O usuário poderia informar opções como coado, expresso ou cappuccino, entre outras. A partir dessa entrada textual, o algoritmo decidiria qual caminho seguir, fornecendo instruções específicas para preparar o café coado ou expresso.
+
+Além disso, podemos usar números inteiros, como na temperatura de 90 graus Celsius, ou na leitura do número de colheres. A quantidade é um exemplo de número inteiro como variável. Também poderíamos utilizar números decimais, como 90.5 graus, para maior precisão. Se formos mais exigentes com o café, poderíamos preferir 91 ou 91.2 graus, por exemplo. Assim, um dado decimal poderia ser utilizado como variável no programa ou algoritmo. Usamos, às vezes, "algoritmo" como sinônimo de "programa", pois, no mundo da computação, são vistos como sinônimos.
+
+Aqui estão alguns exemplos de diferentes tipos de dados que podemos usar:
+
+- Texto: "coado"
+- Número inteiro: 90ºC
+- Número decimal: 90.5ºC
+- Booleano: Falso ou Verdadeiro.
+COPIAR CÓDIGO
+Realizando operações com variáveis
+Outro tipo de variável que podemos utilizar no algoritmo é a booleana, usada em condicionais para verificar se uma condição é verdadeira ou falsa. Uma variável booleana só pode assumir dois valores: verdadeiro ou falso, ou seja, sim ou não. Utilizamos booleanos ao lidar com condições ao longo da execução de um algoritmo.
+
+Além disso, podemos realizar operações com variáveis. Por exemplo, na quantidade, multiplicamos o número de xícaras pela quantidade de colheres. Se tivermos 3 xícaras, usaremos 3 colheres de pó de café. Poderíamos substituir colheres por gramas de pó de café para maior precisão, como 20 gramas por xícara. Estabelecemos um valor, embora não saibamos se essa quantidade é adequada para café coado. Assim, realizamos operações com variáveis.
+
+No algoritmo do par ou ímpar, realizamos uma divisão inteira, dividindo o número informado pelo usuário por 2. Se o resto for zero, decidimos se o número é par ou ímpar. No algoritmo de soma, pedimos ao usuário para informar uma variável x e uma variável y, somamos internamente x e y, e exibimos o resultado. Esse algoritmo simples de soma exemplifica que podemos realizar operações matemáticas com variáveis ao longo do algoritmo.
+
+Veja como isso é feito no algoritmo de soma:
+
+x = 1       -> Variável x
+y = 2       -> Variável y
+z = x + y   -> Variável z
+exibir (z)
+COPIAR CÓDIGO
+Concluindo o entendimento sobre variáveis e operações
+Agora que entendemos o que são variáveis e como usá-las em algoritmos, além de realizar operações com elas, podemos nos aprofundar mais nas operações que podemos realizar durante a execução de algoritmos. Vamos lá?
+
+@@02
+Desafio: Calculando pedidos
+
+Você está desenvolvendo uma funcionalidade para um aplicativo de lanchonete. O sistema precisa calcular o valor total de um pedido com base na quantidade de itens solicitados.
+O cliente pode pedir:
+
+Hambúrguer: R$ 12,00
+Batata frita: R$ 7,00
+Refrigerante: R$ 5,00
+Sua tarefa é criar um algoritmo em linguagem natural ou fluxograma que armazene os dados necessários em variáveis e faça o cálculo do valor total com base nas quantidades informadas.
+
+Se quiser saber mais detalhes sobre uma possível solução, clique na Opinião da Pessoa Instrutora.
+
+Para resolver esse desafio, começamos criando variáveis para armazenar os preços fixos dos itens: preco_hamburguer = 12, preco_batata = 7 e preco_refri = 5.
+Em seguida, usamos outras variáveis para guardar as quantidades que o cliente informou: qtd_hamburguer, qtd_batata e qtd_refri.
+
+Com esses valores, é possível calcular o subtotal de cada item multiplicando a quantidade pelo preço correspondente. Depois, somamos todos os subtotais para obter o valor total do pedido: total_pedido = total_hamburguer + total_batata + total_refri.
+
+Por fim, exibimos o resultado com uma mensagem clara, informando quanto o cliente deve pagar.
+
+Esse tipo de estrutura é bastante comum em sistemas de pedidos e permite treinar a criação e manipulação de variáveis numéricas de forma prática e direta.
+
+@@03
+Operadores e expressões lógicas
+
+Agora que já entendemos o que são variáveis e como utilizá-las na construção de algoritmos que interagem com pessoas, também vimos que podemos realizar algumas operações com essas variáveis. Essas operações podem ser aritméticas, como adição, subtração, multiplicação, divisão e até mesmo o resto da divisão. O que seria isso? Uma divisão inteira, como, por exemplo, no algoritmo de ímpar-par. Nesse caso, pegamos um número fornecido pelo usuário e processamos em nosso próprio cérebro, que é um algoritmo sendo interpretado por humanos. De acordo com o resto daquela divisão, decidimos se o número é par ou ímpar. Não era assim que funcionava nosso algoritmo? Por isso, o símbolo de percentual, que designa uma divisão na qual estamos interessados apenas no resto, é importante e pode ser utilizado dessa forma.
+
+Para ilustrar, podemos usar o seguinte código para verificar se um número é par ou ímpar:
+
+# Divisão inteira: Número % 2
+# Se resto = 0 -> Número é par
+numero = 4
+if numero % 2 == 0:
+    print("Número é par")
+else:
+    print("Número é ímpar")
+Demonstrando a subtração com variáveis
+Se construíssemos um algoritmo de subtração, pediríamos ao usuário para informar dois valores, A e B, que salvaríamos em nossa memória como variável A e variável B. O primeiro valor seria a variável A e o segundo valor, a variável B. Faríamos a subtração para obter uma terceira variável C, que seria A menos B. Utilizaríamos, então, um operador aritmético de subtração para realizar essa operação com as variáveis informadas pelo usuário, obtendo assim uma nova variável que também salvaríamos em nossa memória.
+
+Veja como isso pode ser feito:
+
+# a = 5     -> Variável a
+# b = 2     -> Variável b
+# c = a - b -> Variável c
+# exibir (c)
+a = 5
+b = 2
+c = a - b
+print(c)
+Explorando operações relacionais
+Além das operações aritméticas, em um programa ou algoritmo, também podemos realizar outras operações, como as operações relacionais. Um exemplo que citamos é a comparação do resto de uma divisão inteira, usando o percentual. Se o resto for igual a zero, isso significa que o número é par, e assim tomamos uma decisão a partir dessa relação entre uma variável e um valor de referência, que, nesse caso, é zero. Essa operação é chamada de operação relacional, na qual relacionamos um valor com outro para fazer um teste ou comparação.
+
+Por exemplo, podemos usar igualdade. Pode-se perguntar por que usamos igualdade com dois sinais de igual. Isso ocorre porque já utilizamos um sinal de igual para designar um valor para uma variável. Se usássemos o mesmo sinal gráfico para fazer a comparação, poderia ficar confuso. Por exemplo, ao criar uma variável no algoritmo e atribuir "idade igual a 16", estaríamos atribuindo o valor 16 à variável ou comparando o valor da idade com o número de referência 16? Por isso, utilizamos o sinal gráfico de igual para atribuir, ou seja, para indicar que estamos criando uma variável e salvando na memória que a idade da pessoa usuária é igual a 16. Depois, fazemos uma comparação, verificando se o valor salvo na memória como idade é igual a 18, o que constitui uma operação relacional.
+
+# idade = 16
+# idade == 18 -> Falso
+idade = 16
+if idade == 18:
+    print("Idade é 18")
+else:
+    print("Idade não é 18")
+Utilizando operadores relacionais de diferença e comparação
+Observe que, na primeira vez, atribuímos um valor à variável, e depois comparamos o valor armazenado com outro parâmetro, que é igual a 18. Dessa operação relacional, sempre obtemos um valor booleano, falso ou verdadeiro. O número é igual ou diferente de outro, não há meio termo; é verdadeiro se for igual e falso se for diferente.
+
+Além do operador relacional de igualdade, também podemos utilizar o operador relacional de diferença. Por exemplo, se temos um número igual a 10 e comparamos se ele é diferente de 12, criamos uma variável chamada "número" e salvamos o valor 10. No próximo passo do algoritmo, comparamos o valor dessa variável com 12. É diferente? Sim, então a condição é verdadeira.
+
+# Numero = 10
+# Numero != 12 -> Verdadeiro
+numero = 10
+if numero != 12:
+    print("Número é diferente de 12")
+else:
+    print("Número é igual a 12")
+Comparando valores com operadores relacionais
+Temos mais operadores relacionais. Por exemplo, podemos testar se um número é maior que outro, usando o sinal de maior. Se a idade salva for 16 e perguntarmos se é maior que 20, o resultado será falso. Também podemos usar maior ou igual. Se perguntarmos se o número 10 é maior ou igual a 8, a resposta é verdadeira, pois não é igual, mas é maior que 8.
+
+# idade = 16
+# idade > 20 -> Falso
+idade = 16
+if idade > 20:
+    print("Idade é maior que 20")
+else:
+    print("Idade não é maior que 20")
+
+# Numero = 10
+# Numero >= 8 -> Verdadeiro
+numero = 10
+if numero >= 8:
+    print("Número é maior ou igual a 8")
+else:
+    print("Número é menor que 8")
+Da mesma forma, podemos testar se um número é inferior a outro. Por exemplo, se a idade for 16 e perguntarmos se é menor que 20, a condição é verdadeira. Se tivermos um número igual a 50 e testarmos se ele é menor ou igual a 40, a resposta será falsa, pois ele é maior que 40, não é nem igual nem menor.
+
+# idade = 16
+# idade < 20 -> Verdadeiro
+idade = 16
+if idade < 20:
+    print("Idade é menor que 20")
+else:
+    print("Idade não é menor que 20")
+
+# Numero = 50
+# Numero <= 40 -> Falso
+numero = 50
+if numero <= 40:
+    print("Número é menor ou igual a 40")
+else:
+    print("Número é maior que 40")
+Aplicando operadores relacionais em algoritmos
+Os operadores relacionais são frequentemente utilizados na construção de algoritmos para testar condições, decidir se seguimos por um caminho ou outro, ou para determinar se continuamos executando uma sequência de instruções dentro de um laço de repetição ou loop. No entanto, será que conseguimos testar apenas uma única condição por vez? Em alguns casos, pode ser necessário testar duas condições em um algoritmo.
+
+Vamos considerar um exemplo de um algoritmo que verifica se uma pessoa pode dirigir ou não, utilizando pseudocódigo. Primeiro, perguntamos a idade do usuário, que informa ter 20 anos. Armazenamos essa informação em uma variável chamada idade. Em seguida, criamos uma nova variável chamada tem_carteira, que recebe um valor booleano, true (verdadeiro) ou false (falso), indicando se a pessoa possui carteira de habilitação. Não há meio-termo: ou a pessoa tem carteira de habilitação ou não.
+
+Para verificar se a pessoa pode dirigir, precisamos testar duas condições: se a idade é maior ou igual a 18 e se a pessoa possui carteira. Podemos realizar esse teste de forma única, utilizando conectivos lógicos. Neste caso, usamos o conectivo lógico "E", ou AND em inglês. Se a idade for maior ou igual a 18 e tem_carteira for true, exibimos a mensagem de que a pessoa pode dirigir. Se uma dessas condições for falsa, a mensagem não será exibida.
+
+# idade = 20
+# tem_carteira = True
+# se idade >= 18 E tem_carteira:
+#     exibir "Pode dirigir"
+idade = 20
+tem_carteira = True
+if idade >= 18 and tem_carteira:
+    print("Pode dirigir")
+else:
+    print("Não pode dirigir")
+Verificando condições com operadores lógicos
+Vamos para outra situação: verificar se a pessoa tem direito a desconto em um passe cultural. Verificamos a idade da pessoa, se é maior ou igual a 60, e se a pessoa é estudante, pois essas são as condições que geralmente garantem o desconto. A variável idade recebe o valor 65, e estudante recebe false. Se a idade for maior ou igual a 60 ou estudante for true, exibimos que a pessoa tem direito a desconto. Caso contrário, se nenhuma das condições for verdadeira, exibimos que não há direito a desconto. Aqui, usamos o conectivo "OU", que permite que apenas uma condição verdadeira seja suficiente para executar a instrução.
+
+# idade = 65
+# estudante = False
+# se idade >= 60 OU estudante:
+#     exibir "Tem direito a desconto"
+# senão:
+#     exibir "Não tem direito a desconto"
+idade = 65
+estudante = False
+if idade >= 60 or estudante:
+    print("Tem direito a desconto")
+else:
+    print("Não tem direito a desconto")
+Utilizando o operador lógico "NÃO"
+Por último, vamos verificar se o usuário está logado para exibir uma mensagem solicitando login. Criamos a variável usuario_logado, que pode ser true ou false. Neste exemplo, usuario_logado é false, indicando que o usuário não está logado. A condição "não usuario_logado" inverte o valor lógico armazenado na variável. Se usuario_logado for false, a condição se torna true, e o algoritmo exibe a mensagem para o usuário fazer login. Essa inversão é feita com o operador "NÃO", ou NOT em inglês.
+
+# usuario_logado = False
+# se NÃO usuario_logado:
+#     exibir "Faça login para continuar"
+usuario_logado = False
+if not usuario_logado:
+    print("Faça login para continuar")
+Resumindo o uso de operadores em algoritmos
+Em resumo, os operadores lógicos são: "E", onde todas as condições precisam ser verdadeiras; "OU", onde basta uma condição ser verdadeira; e "NÃO", que inverte o valor lógico de uma variável booleana. Compreendemos como usar operadores relacionais, aritméticos e lógicos para estruturar algoritmos, realizar testes de condições e tomar decisões, como seguir por um caminho, exibir uma mensagem ou executar um laço de repetição.
+
+@@04
+Desafio: Verificação de desconto
+
+Você está desenvolvendo o sistema de bilheteria para um cinema. Os clientes podem ter direito a meia-entrada em duas situações:
+Se tiverem menos de 18 anos
+ou
+
+Se forem estudantes
+Sua tarefa é criar um algoritmo em linguagem natural ou gráfica (usando fluxogramas, por exemplo) que avalie as informações do cliente e exiba uma mensagem indicando se ele tem ou não direito ao desconto.
+
+Se quiser saber mais detalhes sobre uma possível solução, clique na Opinião da Pessoa Instrutora.
+
+Neste caso, precisamos começar coletando duas informações do usuário:
+idade e estudante (um valor booleano: verdadeiro ou falso).
+
+Com esses dados, podemos aplicar uma expressão lógica que usa operadores relacionais e o operador OU (idade < 18 ou estudante == True) para verificar se alguma das condições do desconto é verdadeira.
+
+A estrutura do algoritmo pode seguir este formato:
+
+Solicitar a idade do cliente.
+Perguntar se ele é estudante (sim ou não / verdadeiro ou falso).
+Verificar se idade < 18 ou estudante é verdadeiro.
+Se a condição for satisfeita, exibir: "Meia-entrada aplicada."
+Caso contrário, exibir: "Valor integral."
+Esse tipo de verificação é bastante comum em sistemas reais, onde regras de negócio envolvem condições combinadas e precisam de decisões automáticas. É um ótimo exercício para praticar expressões lógicas com operadores relacionais e booleanos.
+
+@@05
+Processando algoritmos
+
+Vamos começar analisando um algoritmo de verificação da meia-entrada, escrito em pseudocódigo em linguagem natural. Primeiramente, coletamos alguns dados da pessoa usuária: pedimos a idade e perguntamos se é estudante, para salvarmos o valor true ou false na variável estudante. Também temos como entrada o preço total do ingresso. A partir dessas informações, decidimos qual será o preço aplicável à pessoa usuária para o ingresso, verificando se a meia-entrada é válida.
+
+Para ilustrar isso, vamos começar com a definição das variáveis de entrada:
+
+// Input (dados de entrada)
+exibir "Informe a idade:"
+idade = ler do usuário
+
+exibir "Você é estudante? (True ou False):"
+estudante = ler do usuário
+
+preco_total = 40
+COPIAR CÓDIGO
+Verificando condições para meia-entrada
+Quais são as condições que testamos? Verificamos se a pessoa usuária tem menos de 18 anos ou se é estudante. Basta que uma dessas condições seja satisfeita para que a pessoa tenha direito à meia-entrada. O conectivo lógico "ou" é utilizado aqui, significando que apenas uma das condições precisa ser verdadeira para aplicarmos essa regra de negócio.
+
+Agora, vamos ver como o processamento dessas condições é feito:
+
+// Processamento
+se idade < 18 OU estudante:
+    preco = preco_total / 2
+    exibir "Meia-entrada aplicada"
+senão:
+    preco = preco_total
+COPIAR CÓDIGO
+O preço é calculado como preco = preco_total / 2, realizando uma divisão por 2. Se uma das condições for verdadeira, exibimos que a meia-entrada foi aplicada. Caso contrário, se nenhuma condição for verdadeira, aplicamos o preço total. Ao final da execução do algoritmo, exibimos que o valor a pagar será igual ao que está salvo na variável preco, calculado de acordo com a condição aplicada, podendo ser dividido por 2 ou igual ao preço total, que neste caso será 40 unidades monetárias.
+
+Exibindo o resultado final
+Finalmente, o resultado é exibido como saída:
+
+// Output (dados de saída)
+exibir "Valor a pagar: " + preco
+COPIAR CÓDIGO
+A partir desse pseudocódigo de entrada, revisamos alguns conceitos e entendemos as principais partes de um algoritmo, incluindo seu ciclo de processamento. A primeira parte de um algoritmo é a entrada, ou input, que são os dados de entrada. Por exemplo, a leitura da idade da pessoa usuária. Adicionamos algumas linhas para emular como faríamos essa pergunta, como "Informe a sua idade", coletando essa informação e salvando na variável idade na memória do dispositivo utilizado para processar o algoritmo.
+
+Explorando o ciclo de processamento de algoritmos
+Da mesma forma, exibiríamos se a pessoa é estudante, com um valor true ou false, e coletaríamos esse valor para salvar na variável estudante. Temos um preço total, que é um valor de referência, usado como entrada no programa. Esse valor não é atribuído pelo usuário, mas internamente, pelo administrador do sistema, por exemplo.
+
+Na etapa de processamento, com base nesses dados de entrada, realizamos uma série de operações lógico-aritméticas, lembrando um pouco o funcionamento de um dispositivo computacional. Primeiro, fazemos um teste de condição: se uma dessas condições for satisfeita, seguimos por um caminho; caso contrário, seguimos por outro. Por fim, temos um output, que é o resultado da execução do programa ou algoritmo, melhor dizendo, que são os dados de saída. Nesse caso, exibimos o valor total que o usuário deve pagar, de acordo com sua situação.
+
+Comparando algoritmos com atividades do dia a dia
+Da mesma forma, se estivéssemos executando uma atividade como fazer um bolo, também teríamos esse ciclo de inputs, que seriam os ingredientes: farinha, ovos, leite e açúcar. As variáveis seriam as quantidades dos ingredientes, de acordo com o tamanho do bolo que queremos fazer, seja menor, para duas pessoas tomarem café, ou maior, para levar ao trabalho para uma confraternização no café.
+
+O processamento envolve misturar os ingredientes, observar os estados, a textura da massa, o bolo enquanto está assando, avaliar tempo e temperatura. Por fim, o output seria o bolo pronto. Quando fazemos um bolo, é um processo linear, embora tenhamos etapas em que iteramos para verificar a condição e a textura da massa. No entanto, ao escrever um código, temos essa abordagem de iterar.
+
+Ajustando e testando algoritmos
+Por exemplo, no algoritmo que escrevemos para testar se uma pessoa tem direito à meia entrada, atribuímos duas condições: se ela é estudante ou menor de 18 anos. Poderíamos argumentar que, se a pessoa for maior de 60, também tem direito à meia entrada. Poderíamos ajustar o pseudocódigo para criar um algoritmo em uma linguagem mais próxima da compreensão humana. Essa é uma característica do desenvolvimento de algoritmos para resolver problemas: cometemos deslizes, esquecemos condições, como avaliar se a pessoa é maior de 60 anos.
+
+O que fazemos? Testamos, avaliamos, muitas vezes em equipe, e ajustamos. Ajustamos o algoritmo para atender todas as condições e ser utilizável para verificação e definição de preço de ingressos. Esse é o ciclo natural ao criar algoritmos: testar, avaliar e ajustar. Os erros fazem parte da nossa jornada de desenvolvimento, não apenas profissional, mas do dia a dia. Observamos que uma condição precisa ser diferente, precisamos melhorar um teste porque o resultado não é o esperado. É importante ter isso em mente ao longo da jornada de aprendizado no mundo da tecnologia.
+
+@@06
+Desafio: Calculando valor da entrega
+
+Você está desenvolvendo um sistema para uma empresa de delivery. O valor da taxa de entrega depende da distância até o cliente e se o pedido foi feito em um dia de chuva.
+As regras são:
+
+Para entregas até 5 km, a taxa é R$ 5,00.
+Entre 5 e 10 km, a taxa é R$ 8,00.
+Acima de 10 km, a taxa é R$ 10,00.
+Se estiver chovendo, acrescenta R$ 2,00 à taxa padrão.
+O desafio desta atividade é criar um algoritmo em linguagem natural que informe o valor final da entrega.
+
+Para entender melhor como elaborar uma solução para esse desafio, clique na Opinião da Pessoa Instrutora.
+
+O algoritmo pode ser organizado em três etapas:
+Entrada:
+Solicitar a distância até o endereço do cliente (em km).
+Perguntar se está chovendo (resposta booleana: verdadeiro ou falso).
+Processamento:
+Verificar a distância e atribuir a taxa base de acordo com as regras.
+Se estiver chovendo, adicionar R$ 2,00 à taxa base.
+Calcular o valor final da entrega.
+Saída:
+Exibir o valor total da taxa de entrega com uma mensagem clara, como: "Taxa de entrega: R$ X,00"
+
+@@07
+Utilizando funções
+
+Agora, vamos abordar um problema simples para entender como podemos organizar melhor a estrutura dos nossos algoritmos utilizando o conceito de função. Veremos que a função está intimamente relacionada com aquele conceito da matemática que aprendemos na educação básica.
+
+Para isso, vamos trabalhar com um problema completo de um conversor de unidades. Nosso objetivo é desenvolver um algoritmo usando pseudo-código que fará a conversão de temperatura da escala Celsius para a escala Fahrenheit. É comum que alguns países adotem escalas diferentes, e queremos construir uma funcionalidade que poderia estar, por exemplo, em um aplicativo que auxilia na conversão de unidades, inclusive para estudantes que precisam realizar essas conversões em Física ou Química.
+
+Estruturando o algoritmo de conversão
+Para resolver esse problema, utilizaremos uma fórmula consagrada da Física que faz a conversão de Celsius para Fahrenheit. No pseudo-código, começaremos com a entrada, seguida pelo processamento e, por fim, a saída.
+
+Na entrada, utilizamos duas barras para inserir um comentário no algoritmo, o que é comum para facilitar o entendimento, especialmente quando não estamos usando uma linguagem tão natural. Esse recurso é amplamente utilizado na computação ao construir programas. O primeiro comentário que inserimos é sobre a finalidade do algoritmo, que é um conversor de temperatura. A primeira instrução é exibir para a pessoa usuária que o algoritmo é um conversor da escala Celsius para Fahrenheit.
+
+// Programa: Conversor de Temperatura
+exibir "Conversor de ºC para ºF"
+COPIAR CÓDIGO
+Em seguida, temos um bloco de entradas com duas instruções. A primeira é exibir a mensagem para a pessoa usuária digitar a temperatura na escala Celsius. Definimos uma variável celsius, que receberá o valor digitado pela pessoa usuária.
+
+// Entrada
+exibir "Digite a temperatura em Celsius:"
+celsius = ler do usuário
+COPIAR CÓDIGO
+Processando e exibindo o resultado da conversão
+Na parte de processamento, utilizamos a fórmula conhecida para a conversão de Celsius para Fahrenheit. Pegamos o valor salvo na variável celsius, realizamos operações aritméticas, multiplicando por 9/5 e adicionando 32. Atribuímos o resultado a uma nova variável chamada fahrenheit. Assim, toda vez que mencionarmos fahrenheit, estaremos nos referindo ao valor resultante dessa operação aritmética.
+
+// Processamento
+fahrenheit = (celsius * 9 / 5) + 32
+COPIAR CÓDIGO
+Após o processamento, já temos o valor da temperatura na escala Fahrenheit e podemos passar para a saída do algoritmo. Usamos a instrução de exibir, colocando o texto entre aspas. Para exibir o valor salvo em uma variável, utilizamos a sintaxe + fahrenheit, integrando esse valor na mensagem que será informada à pessoa usuária, junto com o símbolo de grau Fahrenheit.
+
+// Saída
+exibir "Temperatura: " + fahrenheit + " ºF"
+COPIAR CÓDIGO
+Explorando a modularidade com funções
+Resolvemos esse problema, mas há uma forma alternativa de abordá-lo. Imagine que estamos construindo um conversor geral de unidades, capaz de converter várias escalas. Se a pessoa usuária quiser converter de Fahrenheit para Kelvin, ou de metro para centímetro, seria mais eficiente organizar o código de modo que, de acordo com a seleção no menu, o algoritmo chame a função específica para aquele caso de uso. Isso tornaria o algoritmo mais bem estruturado e lógico, utilizando o conceito de função que vem da matemática.
+
+Uma função, basicamente, será um bloco de algoritmo que realiza uma tarefa específica, como converter uma temperatura de uma escala para outra. Por exemplo, poderíamos ter outra função nesse algoritmo geral de conversão de unidades de medida, para converter de uma escala métrica para outra, como do metro para o decímetro, e assim por diante.
+
+Implementando funções no pseudocódigo
+Como essa função opera na prática? Ela recebe entradas, que chamamos de parâmetros, como o valor que a pessoa usuária deseja converter, e precisa devolver algo, já que essa função processa a entrada para gerar uma saída. Trata-se de um mini algoritmo dentro de um algoritmo maior. Ela gera um retorno, uma saída, que no nosso caso será uma função que recebe a temperatura na escala Celsius e devolve essa temperatura na escala Fahrenheit.
+
+Esse conceito é semelhante ao da matemática. Se lembrarmos das aulas de polinômios ou funções do primeiro grau, tínhamos uma função f(x) = ax + b. Uma função tem uma entrada e retorna um valor, que será o valor de y, por exemplo. y está representado por f(x), ou seja, uma função de x, que recebe como entrada a variável x e processa esse valor para gerar o valor de y, a saída da função. O conceito é o mesmo da matemática e nos ajuda a estruturar melhor nossos algoritmos.
+
+// Exemplo -> f(x) = a x + b
+COPIAR CÓDIGO
+Uma função não precisa ser apenas numérica; podemos usar outros tipos de dados como entrada e saída. Vamos ver como fica nosso pseudocódigo no caso de conversão de Celsius para Fahrenheit, usando esse conceito de função de maneira simplificada.
+
+No pseudocódigo, começamos definindo uma função chamada converterCparaF, ou seja, de Celsius para Fahrenheit. Entre parênteses, informamos a entrada da função, o parâmetro que ela receberá, celsius, que será processado internamente. Dentro da função, há uma instrução de retorno, que pega esse parâmetro, processa-o e retorna para o algoritmo maior o valor de Celsius convertido para Fahrenheit. Esse processamento é simplificado no caso de uma função.
+
+// Função para conversão
+funcao converterCparaF(celsius):
+    retornar (celsius * 9 / 5) + 32
+COPIAR CÓDIGO
+Integrando a função no programa principal
+No programa principal, utilizamos um comentário com duas barras e começamos exibindo "Conversor de Temperatura". Em seguida, há uma instrução para exibir "Digite a sua temperatura em Celsius". A variável c será lida da entrada da pessoa usuária. A função foi definida para receber um parâmetro chamado Celsius, mas podemos usar qualquer variável, como c, d, e, etc. A variável c na memória receberá o valor informado pela pessoa usuária.
+
+// Programa principal
+exibir " Conversor de Temperatura "
+exibir "Digite a temperatura em Celsius:"
+c = ler do usuário
+COPIAR CÓDIGO
+A variável f armazenará o valor retornado pela função, através da chamada da função, que calcula a conversão do valor de c. Quando usamos converterCparaF, passamos o valor como parâmetro para a função. Ao executar essa instrução, procuramos o bloco onde a função está definida e executamos as instruções dentro dela. Após a execução, retornamos com o valor e salvamos na variável f.
+
+// Chamada da função
+f = converterCparaF(c)
+COPIAR CÓDIGO
+Depois de executar, prosseguimos na execução do algoritmo de maneira sequencial. A próxima instrução é exibir a temperatura em graus Fahrenheit. Usamos o recurso de concatenar f, ou seja, o valor salvo na variável f, e depois colocamos a unidade desse valor.
+
+// Exibição do resultado
+exibir "Temperatura em ºF: " + f + " ºF"
+COPIAR CÓDIGO
+Concluindo a estruturação modular do algoritmo
+Com isso, conseguimos estruturar nossos algoritmos de maneira mais lógica e modular. Poderíamos ter várias funções, uma para cada unidade de medida a ser convertida dentro do algoritmo. Isso facilita a depuração e o ajuste do algoritmo para melhorar seu desempenho.
+
+@@08
+Desafio: conversor de moedas
+
+Você está desenvolvendo um sistema de apoio para uma agência de viagens. Uma das funcionalidades mais solicitadas é um conversor de moedas. O usuário informa um valor em reais (R$) e o sistema precisa mostrar quanto isso representa em dólares (US$), usando uma taxa de câmbio definida pela empresa.
+Sua tarefa é criar um algoritmo em linguagem natural que use uma função para fazer essa conversão. A função deve receber o valor em reais e a taxa de câmbio como entrada, e retornar o valor convertido.
+
+Para entender melhor como elaborar uma solução para esse desafio, clique na Opinião da Pessoa Instrutora.
+
+Neste caso, podemos criar uma função chamada converter_para_dolar, que receba dois parâmetros: valor_em_reais e taxa_de_cambio.
+Dentro da função, fazemos o cálculo da conversão com a seguinte fórmula: valor_convertido = valor_em_reais / taxa_de_cambio
+
+A função então retorna esse valor convertido para ser usado no restante do programa.
+
+No programa principal, pedimos ao usuário o valor em reais e a taxa de câmbio atual, chamamos a função e, por fim, exibimos o valor convertido com uma mensagem como: "Com a taxa atual, o valor em dólares é: [valor]"
+
+Esse tipo de abordagem ajuda a organizar o código em blocos reutilizáveis e facilita futuras alterações, como adicionar outras moedas ou ajustar a fórmula.
+
+@@09
+Como computador executa programas
+
+Agora que investigamos mais a fundo como estruturar algoritmos de maneira lógica, ou seja, que sejam compreensíveis por máquinas, é hora de analisarmos como os computadores conseguem executar essas instruções escritas na forma de algoritmos.
+
+Vamos pensar em um caso comum no nosso dia a dia, como, por exemplo, quando saímos de casa e queremos pesquisar a melhor rota origem-destino, considerando o meio de transporte que utilizaremos para chegar mais rápido ao local de trabalho durante uma manhã. Teríamos uma coleta de dados pelo dispositivo, como um celular, com informações de trânsito e vias. Informaríamos, como usuários, o local de saída e o destino desejado. Essas informações seriam processadas a partir de um conjunto de instruções do algoritmo de indicação de rotas, resultando em um cálculo de rota. A partir desse cálculo, a aplicação exibiria uma rota otimizada, indicando o melhor caminho, seja de carro ou utilizando transporte público, como ônibus e metrô.
+
+Explicando o ciclo de processamento de dados
+Assim, o computador processa os dados de entrada, segue instruções para calcular a rota e gera uma saída na interface, indicando graficamente no mapa um caminho otimizado. Dessa forma, entendemos que o computador executa tarefas a partir de instruções. O cálculo de rota não é feito sozinho; há um conjunto de regras de negócio implementadas na forma de instruções, passo a passo, sequências algorítmicas. O computador testa condições, realiza operações aritméticas de rota, tempo, distância, deslocamento e, às vezes, até de custo, para exibir para a pessoa usuária e gerar a saída, completando o ciclo de processamento: entrada, processamento e saída.
+
+Podemos constatar que os programas que fazem parte de uma aplicação como essa, que utilizamos no dia a dia, são a implementação de algoritmos que discutimos. Esses programas traduzem as instruções que escrevemos, usando uma linguagem natural ou gráfica, em uma linguagem compreensível por computadores. O computador não entende nossa linguagem natural; ele entende apenas uma linguagem de sinais elétricos. Portanto, há o trabalho de traduzir a linguagem natural para uma linguagem de sinais elétricos, para que o conjunto de instruções e dados de entrada sejam processados pelo dispositivo e gerem uma saída. Da mesma forma, essa saída será em sinais elétricos que precisarão ser codificados para uma linguagem natural, exibindo a rota graficamente e usando o mecanismo de abstração, para focarmos apenas no passo a passo essencial para executar a rota.
+
+Explorando a arquitetura de Von Neumann
+Agora é hora de analisarmos como está organizado internamente o funcionamento de um computador. Para isso, podemos usar um modelo comum no mundo da computação, presente em vários livros: a arquitetura de Von Neumann. Essa arquitetura é muito utilizada como referência para entendermos o ciclo de processamento por um computador.
+
+Podemos organizar um computador em quatro componentes básicos, segundo a lógica dessa arquitetura: unidade de entrada, unidade de saída, unidade de memória e unidade central de processamento. Vamos entender cada um deles.
+
+Detalhando os componentes do computador
+A unidade de entrada é onde inserimos os dados para os nossos algoritmos. Por exemplo, podemos digitar nossa idade no teclado ou, em uma caixa de seleção, usar o mouse para indicar se somos estudantes, verificando assim nosso direito à entrada. Esses dados de entrada são processados na UCP, unidade central de processamento, ou CPU, do termo em inglês. Observamos que há uma conexão entre a UCP e a memória. A memória é onde estão armazenadas as instruções que o computador executará para realizar o algoritmo, como o de verificação do preço de um ingresso. As instruções e outros dados ficam salvos na unidade de memória. O ciclo de processamento ocorre dentro da UCP até gerar uma saída, que é exibida na unidade de saída, podendo ser um monitor, uma tela ou até mesmo uma impressora, imprimindo o ticket.
+
+Se analisarmos mais detidamente a unidade central de processamento, identificamos dois componentes básicos: a unidade lógico-aritmética e a unidade de controle. A unidade de controle está integrada diretamente com a unidade lógico-aritmética, unidade de entrada, unidade de saída e unidade de memória. A unidade lógico-aritmética é dedicada à realização das operações lógico-aritméticas, ou seja, à execução das instruções de um algoritmo. A unidade de controle organiza o funcionamento interno do dispositivo, busca o valor de uma variável armazenada na unidade de memória. Por exemplo, quando o usuário insere a idade, a unidade de controle salva na memória que a idade é igual a 20. Quando uma instrução precisa do valor da idade, a unidade de controle busca e disponibiliza para a unidade lógico-aritmética.
+
+Compreendendo o ciclo de processamento no hardware
+Ao final da execução do algoritmo, a unidade lógico-aritmética encaminha a saída, como o valor do ingresso e a mensagem sobre o direito à meia-entrada, para a unidade de controle, que a direciona à unidade de saída. Assim, temos todo o ciclo de processamento usando o hardware. Estamos analisando de forma simplificada para entender os principais aspectos internos de um hardware.
+
+Refletindo sobre o papel do programador
+Nesse contexto, o que significa programar? O que significa ser uma pessoa desenvolvedora? Agora que já vimos aspectos da construção lógica de algoritmos, programar significa criar instruções que o computador consegue entender e executar passo a passo, utilizando a unidade central de processamento, salvando informações na memória, como instruções e variáveis, e coletando informações das pessoas usuárias, processando e gerando saídas alinhadas com o objetivo do programa.
+
+Agora, temos uma visão mais ampla de como os computadores funcionam, como estruturar algoritmos de maneira lógica e o que é programar. Compreendemos o papel da pessoa desenvolvedora, que desenvolve diretamente esses programas. É hora de avançarmos no mundo da programação, o que faremos na próxima aula.
+
+@@10
+Gerenciamento de entregas
+
+A Hermex Log, uma empresa de logística especializada em serviços de entrega, está desenvolvendo um sistema para otimizar o gerenciamento de suas entregas. A equipe precisa criar um algoritmo que calcule o tempo estimado de entrega com base na distância e na velocidade média do veículo. Para isso, é necessário utilizar variáveis para armazenar a distância e a velocidade, e realizar operações matemáticas para calcular o tempo.
+Qual abordagem garantiria que o tempo estimado de entrega seja calculado corretamente?
+
+Criar uma variável para a distância e outra para a velocidade, somar esses valores para obter o tempo estimado de entrega, e exibir o resultado diretamente à pessoa usuária, considerando que a soma dos valores pode ser ajustada posteriormente com outros fatores externos, como condições de tráfego ou paradas não planejadas.
+ 
+Alternativa incorreta
+Definir variáveis para a distância e a velocidade média, realizar a divisão da distância pela velocidade para calcular o tempo estimado de entrega, e armazenar o resultado em uma nova variável que será exibida à pessoa usuária.
+ 
+Correta, pois essa abordagem segue a lógica matemática correta para calcular o tempo estimado de entrega, utilizando variáveis para armazenar os valores necessários e exibindo o resultado final.
+Alternativa incorreta
+Definir variáveis para a distância e a velocidade, subtrair a velocidade da distância para calcular o tempo estimado de entrega, e armazenar o resultado em uma nova variável, considerando que a subtração pode ser ajustada com coeficientes de correção baseados em dados históricos de entregas.
+ 
+Incorreta, pois subtrair a velocidade da distância não é a operação matemática correta para calcular o tempo estimado de entrega, que deve ser obtido pela divisão da distância pela velocidade. Coeficientes de correção não alteram a necessidade da operação correta.
+Alternativa incorreta
+Utilizar uma única variável para armazenar tanto a distância quanto a velocidade, multiplicar esses valores para calcular o tempo estimado de entrega, e exibir o resultado, assumindo que a multiplicação pode ser útil em cenários específicos onde a relação entre distância e velocidade é não-linear.
+
+@@11
+Personalizando recomendações musicais
+
+A Playcatch, uma plataforma de streaming de música, está desenvolvendo um sistema de recomendações personalizadas para seus usuários. A equipe de desenvolvimento que você faz parte precisa criar um algoritmo que determine quais músicas devem ser recomendadas com base em três critérios: músicas recentemente ouvidas, músicas de artistas favoritos, e músicas de gêneros frequentemente escutados.
+Qual seria a melhor abordagem para garantir que as recomendações sejam relevantes e personalizadas para cada pessoa usuária?
+
+O algoritmo deve recomendar músicas aleatoriamente de uma lista de tendências globais, garantindo que a pessoa usuária esteja sempre atualizada com as músicas mais populares, independentemente de suas preferências pessoais. Essa abordagem pode ser complementada com análises de dados de mercado para identificar quais tendências têm maior potencial de engajamento, permitindo que a plataforma se mantenha competitiva e relevante no cenário global de streaming de música.
+ 
+Alternativa incorreta
+O algoritmo deve recomendar apenas músicas de artistas favoritos, pois isso garante que a pessoa usuária sempre receba músicas de seu interesse, sem a necessidade de considerar outros critérios como gêneros ou histórico recente. Além disso, ao focar exclusivamente em artistas favoritos, o sistema pode otimizar o processamento de dados, reduzindo a complexidade computacional e melhorando a eficiência do algoritmo, o que pode ser vantajoso em termos de recursos.
+ 
+Alternativa incorreta
+O algoritmo deve começar coletando dados de entrada, como o histórico de músicas ouvidas recentemente, a lista de artistas favoritos, e os gêneros mais escutados pela pessoa usuária. Em seguida, o algoritmo deve processar esses dados para identificar padrões e preferências. As músicas que atendem a pelo menos um dos critérios devem ser priorizadas nas recomendações. O algoritmo pode atribuir pesos diferentes a cada critério para ajustar a relevância das recomendações. Por exemplo, músicas de artistas favoritos podem ter um peso maior do que músicas de gêneros frequentemente escutados. Essa estrutura garante que as recomendações sejam adaptadas aos gostos individuais de cada pessoa usuária.
+ 
+Correta, pois essa abordagem considera múltiplos critérios e ajusta a relevância das recomendações com base em pesos, garantindo personalização e relevância para cada pessoa usuária.
+Alternativa incorreta
+O algoritmo deve priorizar músicas de gêneros frequentemente escutados, ignorando o histórico recente e artistas favoritos, para garantir que a pessoa usuária explore novas músicas dentro de seus gêneros preferidos. Adicionalmente, essa abordagem pode incentivar a descoberta de subgêneros ou artistas emergentes dentro dos gêneros favoritos, ampliando o horizonte musical da pessoa usuária e promovendo uma experiência de escuta mais rica e diversificada.
+
+@@12
+O que aprendemos?
+
+Nesta aula, aprendemos:
+A definição e uso de variáveis nos algoritmos.
+Como utilizar operadores aritméticos e relacionais para manipular e comparar dados.
+O uso de operadores lógicos para combinar múltiplas condições em algoritmos.
+A estruturação de algoritmos em entrada, processamento e saída.
+O conceito de funções para modularizar e reutilizar código em algoritmos.
+O processamento de dados em dispositivos computacionais com base na arquitetura de Von Neumann.
+O papel da unidade central de processamento (UCP) e seus componentes na execução de algoritmos.
+O ciclo de processamento de dados, incluindo entrada, processamento e saída em aplicações práticas.
