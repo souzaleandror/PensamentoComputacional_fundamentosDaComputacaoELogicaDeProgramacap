@@ -1243,3 +1243,363 @@ O conceito de funções para modularizar e reutilizar código em algoritmos.
 O processamento de dados em dispositivos computacionais com base na arquitetura de Von Neumann.
 O papel da unidade central de processamento (UCP) e seus componentes na execução de algoritmos.
 O ciclo de processamento de dados, incluindo entrada, processamento e saída em aplicações práticas.
+
+#17/01/2026
+
+@05-Mundo da programação
+
+@@01
+Linguagens de programação
+
+Agora que já vimos como estruturar nossos algoritmos de maneira lógica, utilizando condicionais, loops ou laços de repetição, funções, variáveis de diferentes tipos, e também operadores relacionais e lógicos, é hora de traduzir esses algoritmos, ou pelo menos analisar como traduzimos esses algoritmos para uma linguagem compreensível pelos computadores. Entramos, então, na atividade conhecida como programação, que é a principal tarefa das pessoas desenvolvedoras no mundo do software.
+
+Um programa é um conjunto ordenado de instruções que indica ao hardware, ou seja, ao computador, o que deve ser feito a cada passo no algoritmo. Na realidade, um programa pode ser formado por vários algoritmos que são implementados. Em vez de utilizar pseudocódigo ou uma linguagem gráfica, como temos feito para construir algoritmos, utilizamos uma linguagem mais específica, que seja mais compreensível para os computadores. Por isso, implementamos o algoritmo na forma de código.
+
+Explorando linguagens de programação e suas aplicações
+Como escrevemos esses programas? Usando linguagens conhecidas como linguagens de programação. Alguns exemplos de linguagens de programação são Python, C#, Java, Go e PHP. Observe que não citamos outras linguagens como HTML e CSS, que são utilizadas para a construção de outros componentes do software. Lembrando que o software, assim como sistemas físicos, como carros, é formado por diferentes módulos e subsistemas. Nos softwares, temos, por exemplo, o back-end, o front-end e o banco de dados.
+
+O banco de dados é onde armazenamos todos os dados gerados a partir da interação da pessoa usuária com a aplicação. O back-end é onde implementamos todo o comportamento do algoritmo, ou seja, todas as regras de negócio. Ele processa os dados de entrada gerados a partir da interação dos usuários com o front-end, que cuida de toda a experiência da pessoa usuária utilizando a aplicação, de toda a interação usuário-máquina, usuário-computador, através do aplicativo construído. As linguagens mencionadas são focadas na construção do back-end, ou seja, na implementação das regras de negócio do software.
+
+Compreendendo a sintaxe e a lógica das linguagens de programação
+Agora que sabemos como escrever programas, ou seja, usando linguagens de programação, precisamos aprender como usar essas linguagens na prática. O que é uma linguagem de programação? É um conjunto de símbolos, palavras-chave e regras de sintaxe que utilizamos para construir algoritmos compreensíveis e executáveis pelos computadores.
+
+Em muitos exemplos, utilizamos pseudocódigo. Se não estivéssemos explicando o que cada instrução fazia dentro do pseudocódigo, talvez ficasse difícil entender. Por exemplo, como a instrução "exibir" funciona ou como a função "converter C para F", recebendo um parâmetro chamado Celsius, opera. A compreensão só foi possível porque explicamos a lógica por trás da implementação, ou seja, como as palavras dispostas deveriam ser interpretadas para a execução da instrução.
+
+Definindo regras de sintaxe e armazenamento de programas
+Uma linguagem de programação define exatamente isso: quais símbolos podemos utilizar, quais palavras-chave usaremos para escrever um código de verdade que seja interpretável e executável por uma máquina. Também define as regras de sintaxe, como, por exemplo, o espaçamento ao escrever um condicional, indicando que as instruções subsequentes só serão executadas se a condição for verdadeira, ou enquanto a condição for verdadeira, no caso de um laço de repetição. Isso é uma regra de sintaxe comum nas linguagens de programação.
+
+Olhando novamente para a arquitetura de Von Neumann, onde nossos programas estarão armazenados? Dentro da unidade de memória. A unidade de controle buscará o programa, instrução por instrução, e decodificará para que seja executado como um conjunto de operações lógico-aritméticas na unidade lógico-aritmética (ULA). Todo esse processamento ocorre dentro da UCP, ou CPU no termo em inglês, que é o processador do computador. Às vezes, esse processador pode ser complementado com uma placa de vídeo para processamento gráfico, especialmente ao lidar com design de imagens ou jogos, onde uma placa de vídeo é importante.
+
+Explorando unidades de entrada, saída e memória
+Temos também a unidade de entrada, que permite a interação da pessoa usuária com o computador e com todos os aplicativos em execução, e a unidade de saída, que gera o retorno da execução do programa.
+
+Na unidade de memória, muitas vezes podemos ter diferentes dispositivos dentro do computador. Temos, por exemplo, o SSD, que atualmente é uma memória de acesso muito mais rápido. O tempo de acesso, ou seja, o tempo que a unidade de controle leva para recuperar uma informação na memória, seja o valor de uma variável ou a instrução de um programa, é um indicador crítico do tipo de memória que estamos usando. Anteriormente, era comum utilizarmos HDs, que são discos rígidos, um processo mais mecânico e, portanto, com um tempo de acesso maior do que os SSDs. Por isso, migramos para o SSD, para executar operações mais rapidamente, pois conseguimos recuperar informações na memória de forma mais ágil.
+
+Utilizando ambientes de desenvolvimento para programação
+Agora que sabemos como isso é executado internamente no computador e onde fica armazenado, como vamos construir esses programas na prática? Utilizaremos ambientes de desenvolvimento, que nos permitirão editar o código, assim como editávamos o pseudo-código. No pseudo-código, usávamos um editor de texto, mas para editar um código de verdade, que possui um conjunto de palavras-chave bem definidas e uma sintaxe a seguir, é importante ter editores de código que indiquem se a expressão está correta, se a palavra-chave é válida, ou se há alguma confusão. Por isso, os editores de código são fundamentais.
+
+Esses editores possuem depuração integrada, permitindo fazer a depuração em tempo real, para que possamos corrigir e ajustar o código enquanto é desenvolvido. Além disso, temos o gerenciamento de projetos. Quando construímos um software, não é apenas um algoritmo ou um programa; temos vários programas para formar um software funcional, já que há múltiplos componentes. Portanto, a função de gerenciar projetos dentro do ambiente de desenvolvimento é crucial para organizar e estruturar bem a solução.
+
+Explorando ferramentas e ambientes de desenvolvimento
+Além disso, há integração com outras ferramentas, como o controle daquilo que estamos fazendo e o controle da versão do programa em que trabalhamos. Essas são ferramentas importantes no dia a dia da pessoa desenvolvedora. Que tipos de ambientes de desenvolvimento podemos utilizar? Existem diferentes tipos de ambientes, como os ambientes de desenvolvimento integrado, conhecidos como IDEs (Integrated Development Environment). Podemos usar, por exemplo, o VS Code, o IntelliJ, o PyCharm, o NetBeans, que é muito usado para PHP e Java, o PyCharm para Python, o VS Code para diversas linguagens, o Eclipse, que é uma plataforma open source muito utilizada por quem trabalha com Java, e o Visual Studio, usado para .NET, C#, C++.
+
+Esses são exemplos de ambientes que podemos utilizar para desenvolver, ou seja, para construir nosso código, com funcionalidades como depuração e integração com várias outras ferramentas. No VS Code, por exemplo, podemos usá-lo como editor de texto, mas ele permite extensões para ser usado também como uma IDE para diferentes linguagens de programação, possuindo diversas integrações com recursos e outras ferramentas.
+
+Navegando no VS Code e suas funcionalidades
+Ao abrir o VS Code, temos a tela inicial com opções como Start, New File, Open File, Open Folder. Embora muitos termos estejam em inglês, podemos mudar o idioma para português, apesar de o inglês ser uma das principais línguas utilizadas no mundo da tecnologia, conectando pessoas globalmente. A documentação de algumas linguagens geralmente está em inglês, mas hoje, com ferramentas baseadas em IA, conseguimos traduções de qualidade, facilitando a navegação, especialmente para quem não é tão familiarizado com o idioma.
+
+No menu lateral esquerdo, podemos fazer pesquisas e acessar as Extensions, que são extensões como o GitHub Copilot, Docker, entre outras, que podemos integrar ao nosso ambiente de desenvolvimento. No Explorer, podemos abrir ou criar uma nova pasta para organizar o projeto, permitindo um gerenciamento de projeto mais otimizado. Podemos criar uma estrutura para desenvolver a aplicação aos poucos. Se tivermos um código aberto, também teremos um mecanismo de depuração. Este é um exemplo de ambiente que podemos utilizar para desenvolver nossos programas utilizando uma linguagem de programação.
+
+@@02
+Para saber mais: por que existem tantas linguagens de programação?
+
+Ao longo do curso, vimos como construir algoritmos com lógica clara e estruturada. Mas, para que o computador realmente entenda essas instruções, precisamos traduzi-las para uma linguagem de programação.
+Uma linguagem de programação é um conjunto de palavras-chave, regras de escrita (sintaxe) e símbolos que permitem escrever instruções que podem ser interpretadas por um computador. Elas funcionam como uma ponte entre o pensamento lógico humano e a execução da máquina.
+
+Entretanto, talvez você esteja com uma questão por aí: por que existem tantas linguagens diferentes, como Python, JavaScript, Java, C#, Go, entre outras?
+
+A resposta está nos contextos de uso e nas prioridades de cada linguagem. Algumas são mais simples e didáticas, ideais para quem está começando. Outras são usadas para aplicações web, mobile, sistemas embarcados ou jogos, com diferentes níveis de desempenho, segurança e controle sobre o hardware.
+
+Mesmo com tantas opções, o mais importante é entender que todas compartilham os mesmos fundamentos que você já aprendeu aqui: variáveis, condições, loops, funções e estrutura lógica.
+
+Na prática, o que muda é a forma de escrever, mas o raciocínio continua sendo o mesmo.
+
+@@03
+Como o computador entende o código
+
+Já analisamos como construir programas utilizando linguagens de programação e como desenvolvê-los em ambientes de desenvolvimento. Observamos que existem diferentes tipos de linguagem. Surge então a dúvida: será que o computador entende todas essas linguagens? Qual é a linguagem que o computador compreende? O computador entende apenas uma linguagem, que é o código binário ou linguagem de máquina, composta basicamente por uma sequência de bits, 0 e 1.
+
+Pode surgir a pergunta: em algum momento precisaremos escrever parte do nosso algoritmo ou programa usando essa sequência de bits? Não será necessário. Geralmente, utilizamos linguagens de programação e, internamente, empregamos um mecanismo de tradução. Essas linguagens de programação que usamos no dia a dia são uma forma de abstrair uma sintaxe lógica, permitindo que nós, seres humanos, possamos escrever instruções para que um dispositivo computacional as execute.
+
+Explorando a evolução da programação e do hardware
+Nos primórdios da computação, como no caso do ENIAC, o primeiro computador comumente citado na história, que surgiu na década de 40, a programação era feita utilizando cabos. Integrávamos partes do computador usando diferentes cabos, que basicamente utilizavam código binário, ou seja, 0 e 1. Isso ocorre porque o computador é um sistema eletrônico baseado em circuitos integrados, os chips. Esses chips, que constituem o coração do hardware das nossas máquinas, são produzidos em indústrias de alta tecnologia, concentradas em alguns países. Por isso, dedicamos mais esforços ao desenvolvimento de software. O desenvolvimento de hardware é muito concentrado e demanda profissionais altamente especializados, geralmente envolvendo um arranjo entre indústria, instituições de ciência, tecnologia e universidades. No mercado, percebemos que os chips e hardwares estão em constante evolução, tornando essa área de pesquisa, desenvolvimento e inovação muito dinâmica.
+
+Os computadores baseados nesses chips processam e armazenam informações com sinais elétricos. Utilizamos bits, 0 e 1, para representar todos os dados coletados do mundo real. O mundo real é analógico, ou seja, não é binário, não se limita a dois valores. Utilizamos mecanismos de abstração para converter esses dados em sequências compreensíveis pelos dispositivos computacionais. A presença de um sinal elétrico representa um bit 1, enquanto a ausência de um sinal elétrico representa um bit 0 internamente no computador. Por isso, os computadores entendem apenas o código binário, pois funcionam à base de sinais elétricos, processando e armazenando apenas esses sinais, que interpretamos como 0 e 1.
+
+Diferenciando linguagens de baixo e alto nível
+Assim, surge a designação de linguagem de baixo nível e linguagem de alto nível. Linguagens de baixo nível estão próximas do nível de compreensão do hardware, ou seja, do código de máquina. Essa classificação é relativa, baseada na distância, em termos de abstração, entre a linguagem utilizada e o código de máquina. Linguagens de alto nível possuem níveis de abstração mais elevados, estando mais distantes do código de máquina e mais próximas da nossa linguagem natural.
+
+As linguagens de alto nível são mais amigáveis para utilizarmos no nosso dia a dia como pessoas desenvolvedoras. Um exemplo de linguagem de baixo nível é a assembly. A assembly é geralmente utilizada por quem trabalha com sistemas embarcados, que precisam construir códigos para operar com grande eficiência em hardwares limitados. Sistemas embarcados, por exemplo, são dispositivos computacionais ou eletrônicos que estão dentro de geladeiras e máquinas de lavar. Nesses casos, muitas vezes, utilizam-se códigos de baixo nível. As pessoas desenvolvedoras de sistemas embarcados são as que utilizam esse tipo de linguagem.
+
+Utilizando linguagens de alto nível no desenvolvimento de software
+Em geral, nós que trabalhamos na construção de software acabamos utilizando mais comumente as linguagens de alto nível, como Python, Go, Java e C#. Essas linguagens têm maior abstração e são muito mais amigáveis para a construção de códigos.
+
+Agora, surge a pergunta: como uma linguagem de alto nível, mais abstrata, pode ser traduzida para uma linguagem de máquina compreensível por um computador? Tudo começa no código fonte, que é escrito em uma linguagem de programação. Esse código precisa ser traduzido para ser interpretável e executável pelo hardware, que só entende linguagem de máquina. Existem duas maneiras gerais de fazer isso: utilizando um compilador ou um interpretador.
+
+Explicando o funcionamento de compiladores e interpretadores
+Começando pelo compilador, temos um código fonte escrito em uma linguagem de programação, que passa pelo compilador. Este traduz o código fonte em um código objeto, que é escrito em linguagem de máquina. Esse código objeto pode ser interpretado diretamente pelo hardware ou enviado para o sistema operacional, que orquestra o funcionamento do hardware e permite a execução do código objeto. As linguagens que utilizam o compilador são chamadas de linguagens compiladas. Nesse tipo de linguagem, o código fonte não pode ser executado em tempo real; é necessário convertê-lo para um código objeto em linguagem de máquina para que possa ser executado no computador.
+
+Por outro lado, existem as linguagens interpretadas, que utilizam o interpretador. Nesse tipo de linguagem, vamos direto do código fonte para o sistema operacional, e a instrução é executada no hardware. As instruções escritas no código fonte em uma linguagem de programação como Python, que é um exemplo de linguagem interpretada, são traduzidas em tempo real para a linguagem de máquina pelo interpretador, que é processado pelo hardware. Ou seja, ao executar um programa em Python, cada instrução é traduzida em tempo real para a linguagem de máquina, ao contrário de uma linguagem compilada, como as baseadas em C, C# e C++, que fazem a tradução do código fonte para o código objeto antes da execução pelo hardware.
+
+Comparando desempenho e facilidade de uso entre linguagens
+A linguagem interpretada simplifica o processo de depuração e teste, mas, em alguns casos, programas escritos em uma linguagem interpretada podem ser mais lentos para serem executados pelo hardware em comparação a linguagens compiladas. Isso ocorre porque, uma vez que o código inteiro já está traduzido para a linguagem de máquina, a execução nas linguagens compiladas é mais ágil e simplificada.
+
+@@04
+Interagindo com o computador
+
+Tivemos uma jornada bastante longa até aqui. Exploramos como pensar de forma computacional, passamos pela construção de algoritmos utilizando lógica, e agora estamos explorando como construir programas que sejam compreensíveis pelos computadores. Discutimos o que são linguagens de programação e como os computadores entendem essas linguagens por meio do mecanismo interno de tradução.
+
+Talvez nos perguntemos por que não começamos já interagindo com o computador para observar como ele reage. Podemos fazer isso. Um primeiro programa, que é a iniciação no mundo da programação, é conhecido como pedir para um computador exibir um "hello world", ou "olá mundo" em português. Se estivéssemos utilizando pseudocódigo, bastaria escrever "exibir" e colocar a mensagem que o dispositivo deveria exibir entre aspas, como "hello world". A execução desse programa em pseudocódigo resultaria na exibição dessa mensagem, seja por uma pessoa executando o algoritmo ou por uma máquina.
+
+Utilizando o terminal e o VS Code para programação
+No pseudocódigo, isso seria representado como:
+
+exibir "Hello World!"
+Como fazemos isso usando o computador? Precisamos utilizar uma linguagem de programação. Podemos utilizar o terminal do computador, que é uma interface de linha de comando que nos permite interagir diretamente com o sistema operacional, sem precisar de um programa específico, e solicitar que o sistema operacional permita que o computador execute uma determinada tarefa, como exibir uma mensagem de "hello world".
+
+Para isso, podemos usar um ambiente de desenvolvimento, como o VS Code. Dentro dele, conseguimos abrir um terminal. Ao abrir o VS Code, no canto superior esquerdo da tela, há três barras horizontais. Ao clicar nelas, abre-se um menu de seleção com vários termos, como "file" e "edit". Quase no final da lista, encontramos o item "terminal". Ao selecionar "terminal", abre-se um conjunto de opções à direita, onde escolhemos "new terminal" (novo terminal). Isso abrirá uma tela na parte inferior, quase no centro da tela do VS Code, onde aparece "C:\users\PC Studio" e um retângulo branco. Nesse espaço, conseguimos interagir com o sistema operacional do computador, dando instruções que sejam interpretáveis e executáveis pelo computador.
+
+Como seria o "Hello World" aqui?
+Se digitássemos, por exemplo, o pseudocódigo exibir hello world, vamos verificar se funcionaria. Ao tentar executar, apareceu uma mensagem em vermelho. O que essa mensagem nos diz? Ela informa que o termo exibir não é reconhecido como um cmdlet. Ou seja, essa palavra-chave que estamos usando no pseudocódigo não está definida na linguagem utilizada para comunicação com o sistema operacional, que, neste caso, é o Windows.
+
+Se estivermos usando o Linux ou o macOS, a linguagem será diferente ao utilizarmos o terminal. Cada terminal, como o do Windows, utiliza uma linguagem específica. No caso do Windows, o prompt de comando é chamado de PowerShell, que interpreta uma linguagem específica do shell.
+
+Por que chamamos de shell? É importante destacar que shell vem do termo em inglês que significa concha. A concha protege uma pérola, e o shell tem a mesma função: proteger o sistema operacional da execução de comandos que possam danificar o hardware ou o próprio sistema. Por isso, chamamos de PowerShell. No Linux, também chamamos de shell, uma linguagem de shell.
+
+Executando comandos no terminal
+Qual termo podemos utilizar para que o computador exiba "Hello World"? Na linguagem do Windows, digitamos o termo ECHO, seguido de "Hello World" entre aspas, e um ponto de exclamação. Ao pressionar "Enter", a instrução é interpretada e executada, e a saída "Hello World" aparece na tela.
+
+echo "Hello World!"
+Esse é um exemplo de como interagimos com o computador usando uma linguagem específica, neste caso, uma linguagem de shell utilizada em um terminal para comunicação direta com o sistema operacional.
+
+O terminal é muito útil para automatizar uma sequência de tarefas dentro de um servidor, que é um computador maior que executa múltiplas aplicações em um ambiente de infraestrutura. Mesmo em um computador pessoal, podemos usar esse tipo de linguagem para construir scripts, facilitando e simplificando a realização de tarefas rotineiras, como organização de pastas e movimentação de arquivos. O terminal permite realizar essas tarefas de maneira mais simples, utilizando código.
+
+Compreendendo o processo de desenvolvimento de programas
+Agora que sabemos como interagir com o computador, vamos entender mais sobre o processo de desenvolvimento de programas no dia a dia da pessoa desenvolvedora.
+
+@@05
+Para saber mais: usando o terminal do computador
+
+Muitos dos primeiros programas e até tarefas básicas no sistema operacional podem ser feitos diretamente por uma interface chamada terminal, também conhecida como interface de linha de comando (CLI). Diferente das interfaces gráficas (com janelas e botões), no terminal a interação acontece por meio de textos digitados pelo usuário e respostas do sistema.
+Dentro do terminal, temos o prompt, que é o símbolo ou linha onde digitamos os comandos. Ele indica que o sistema está pronto para receber uma instrução. Por exemplo, no Windows é comum ver algo como C:\> e no Linux/Unix, algo como $ ou user@nome-da-máquina:~$.
+
+O Terminal é a janela ou ambiente onde ocorre a comunicação entre usuário e sistema. Por sua vez, o Prompt é o local dentro do terminal em que digitamos os comandos.
+
+Usar o terminal pode parecer desafiador no começo, mas é uma das formas mais diretas de interagir com o computador. Com ele, é possível navegar entre pastas, criar arquivos, executar programas ou instalar pacotes.
+
+Teste aí: abra o terminal e digite echo Ola, mundo!
+
+O sistema vai te responder com a mesma mensagem.
+
+Explorar o terminal ajuda a desenvolver uma mentalidade mais próxima da lógica da programação: você descreve o que quer com precisão, o computador interpreta, executa e responde.
+
+@@06
+Construindo códigos
+
+Como começamos a construir o código? Quando surge uma demanda e precisamos elaborar um código que funcione como solução, não iniciamos diretamente abrindo um ambiente de desenvolvimento como o VS Code e inserindo várias linhas de código. Tudo começa pelo entendimento da demanda que recebemos. Se não compreendermos bem qual demanda vamos atender, a solução que construiremos pode não ser eficaz. Portanto, começamos elaborando as regras de negócio e definindo os requisitos de uma solução para essa demanda ou problema.
+
+Esse processo segue o pensamento computacional. Temos um problema que é grande e envolve múltiplas perspectivas e questões. Precisamos dividi-lo em partes menores que possamos interpretar, focar no essencial e abstrair em cada uma delas, para que possamos construir uma solução adequada que atenda eficientemente todos os pontos dessa demanda.
+
+Definindo regras de negócio e requisitos
+Por exemplo, na elaboração das regras de negócio, se pensarmos no caso do cálculo do ingresso, quais seriam as regras de negócio? Queremos aplicar um desconto de 50% em ingressos de eventos e listar alguns requisitos. Para que a pessoa obtenha esse desconto, ela deve ter uma idade menor que 18, maior ou igual a 60, ou ser estudante. As regras de negócio podem ser explicitadas como um condicional: para que a pessoa tenha direito ao desconto, ela precisa atender uma das três condições mencionadas. Este é um exemplo de como definimos essas regras e requisitos usando uma linguagem de alto nível, a linguagem natural, para entender bem a demanda que vamos resolver.
+
+Neste caso, a pessoa desenvolvedora poderia estar trabalhando no desenvolvimento de uma funcionalidade para uma aplicação que aplicaria o desconto de 50% ou outro percentual para pessoas em casos específicos. Eventualmente, poderíamos ter uma situação em que uma pessoa tenha um cartão de crédito de um determinado banco e o desconto não seja de 50%, mas de 25%, por exemplo.
+
+Modelando a solução antes da implementação
+Depois de definir essas regras e entender como nossa solução deve funcionar para atender a demanda, passamos para a parte de modelagem. Utilizamos uma linguagem natural ou gráfica, como fluxogramas ou pseudocódigos. Por exemplo, poderíamos escrever a seguinte sentença usando linguagem natural: "Para cada participante, vamos precisar verificar idade e status de estudante, aplicar desconto, se for o caso." Esta seria uma regra de funcionamento dessa funcionalidade.
+
+Ao modelarmos essa solução antes de implementar o código propriamente dito, isso nos permite um melhor entendimento da demanda. Compreendendo melhor, seremos capazes de construir uma solução mais eficaz e eficiente, pois, ao executar um programa, utilizamos recursos computacionais. Portanto, não basta que o programa funcione; é importante que ele também seja eficiente. Com a prática, ganhamos a percepção de que um programa funciona de forma mais eficiente em diferentes contextos.
+
+Compreendendo a lógica de programação
+Há um ditado que diz: "Practice makes perfect" (a prática leva à perfeição), ou seja, é a prática que nos aperfeiçoa na nossa função de pessoa desenvolvedora. É importante destacar que o que vimos aqui em termos de lógica para algoritmos é conhecido como lógica de programação. Não usamos de imediato esse termo para não assustar, mas primeiro precisávamos compreender naturalmente todos esses elementos lógicos que utilizamos em conjunto com uma sintaxe, com uma linguagem propriamente dita, para escrever códigos compreensíveis e executados pelos computadores.
+
+Vimos que um algoritmo, assim como um código, é formado por uma sequência de instruções, e podemos organizar essa sequência em blocos menores, como funções, ou utilizar variáveis para solicitar entradas ao usuário, processar dados, salvar e recuperar valores ao longo da execução. Também podemos utilizar condições para definir o caminho a seguir na execução de um algoritmo, ou repetir um bloco de instruções enquanto uma condição for verdadeira ou falsa, através de loops.
+
+Utilizando operadores e condições
+Utilizamos operadores aritméticos para lidar com variáveis, operadores lógicos, como AND, NOT e OR (E, NÃO e OU), e operadores relacionais, como igual, diferente, maior ou igual, maior, menor, menor ou igual, para fazer condições e testes. Isso nos permite verificar se devemos executar um loop ou seguir por um determinado caminho. Nessas condições, quando definimos se vamos seguir um caminho ou não, é comum usar o SE e o SE NÃO. Se a condição for verdadeira, executamos uma instrução; caso contrário, usamos o SE NÃO, com a devida indentação no código, para organizar o pseudocódigo.
+
+No dia a dia real, ao usar uma linguagem de programação, temos essa representação usando uma sintaxe para que os computadores entendam o que é uma condição, o que deve ser executado se a condição for verdadeira e o que deve ser executado caso contrário. Assim, podemos entender um programa como uma soma de lógica, com todos esses elementos mencionados, mais uma linguagem.
+
+A importância da lógica na resolução de problemas
+A lógica é fundamental para nos ajudar a resolver problemas. Ela define as instruções necessárias para solucionar um problema, enquanto a linguagem de programação nos permite expressar essa solução de forma que o computador possa entender e executar. A lógica, com seus condicionais, funções e loops, nos auxilia a resolver problemas de maneira clara e precisa, possibilitando que o computador os resolva. No entanto, para que o computador consiga executar essa lógica, ela deve ser expressa em uma linguagem de programação, respeitando a sintaxe e utilizando palavras-chave específicas. Por exemplo, uma condição que em português seria "se", em inglês é "if". Muitas linguagens de programação utilizam palavras-chave que podem parecer diferentes para nós, que falamos português, mas que têm origem na língua inglesa, a principal língua no mundo da tecnologia.
+
+Entrando nos ciclos de desenvolvimento
+Após modelarmos a solução, é hora de selecionar uma linguagem de programação e organizar essa solução de maneira lógica. Nesse momento, entramos nos ciclos de desenvolvimento. O processo de construir uma solução não é linear, mas iterativo. Por isso, chamamos de ciclos iterativos de desenvolvimento. Construímos, testamos, refatoramos e aprimoramos continuamente. Muitas vezes, trabalhamos em equipes colaborativas, e é importante coletar feedbacks, especialmente quando estamos começando na área. Isso nos permite aprender com pessoas mais experientes, que podem sugerir formas alternativas de resolver problemas. Cada ciclo de desenvolvimento é também um ciclo de aprendizado para nós, como pessoas desenvolvedoras.
+
+Praticando debugging e refatoramento
+Uma prática comum nesses ciclos é o debugging, que consiste em identificar e corrigir erros nos códigos. Por exemplo, ao usar C# para construir uma aplicação, podemos compilar para um código objeto e, ao executar, receber mensagens de erro. Esses erros são naturais e não devem nos inibir. Eles são oportunidades de aprendizado contínuo. Assim como ao aprender um novo idioma, como o inglês, cometemos erros de pronúncia, sintaxe e gramática, na programação, a prática nos ajuda a melhorar e evoluir. Isso faz parte da curva de aprendizado. O debugging é normal para pessoas desenvolvedoras de todos os níveis, desde iniciantes até experientes. Um código raramente funciona perfeitamente na primeira tentativa. Sempre há necessidade de debugging e refatoramento. Além de funcionar, o código deve ter bom desempenho e segurança, requisitos que se tornam mais exigidos à medida que avançamos na carreira.
+
+Aprendendo continuamente e colaborando com Git
+No mundo da tecnologia, que está em constante evolução, somos aprendizes contínuos. Precisamos sempre aprender novas coisas e trabalhar com novos temas. Quando trabalhamos de maneira colaborativa, entra em cena o Git, um sistema de controle de versão. Não vamos explicar como usar o Git ou o GitHub, mas é importante entender que o Git registra todo o histórico de alterações no código. O GitHub é uma plataforma online que armazena repositórios Git, implementando o sistema de controle de versão. No GitHub, podemos compartilhar código, trabalhar de forma colaborativa e encontrar soluções que podem ser reaproveitadas ou aplicadas a partes dos nossos problemas ao desenvolver software.
+
+Explorando a inteligência artificial
+Agora que já discutimos várias etapas do ciclo de desenvolvimento de programas, vamos abordar um último tópico: a inteligência artificial, um termo em alta atualmente. Vamos entender melhor esse ramo da computação.
+
+@@07
+Desafio: Simulador de pedidos em uma cafeteria
+
+Você foi contratado por uma cafeteria que deseja automatizar o atendimento no balcão. O sistema deve permitir que o atendente registre os pedidos de cada cliente, calcule o valor total e aplique um desconto de 10% para clientes cadastrados.
+O processo deve funcionar da seguinte forma:
+
+O atendente informa quantos itens o cliente vai pedir.
+Para cada item, o sistema solicita o nome e o preço.
+Ao final, o sistema pergunta se o cliente é cadastrado.
+Se for, aplica o desconto e exibe o valor com desconto.
+Caso contrário, exibe o valor cheio.
+O desafio consiste em criar um algoritmo que represente essa lógica de forma completa.
+
+Para entender melhor como elaborar uma solução para esse desafio, clique na Opinião da Pessoa Instrutora.
+
+Esse desafio pode ser resolvido organizando a lógica da seguinte forma:
+Entrada:
+Pedir a quantidade de itens.
+Criar uma variável total iniciando em 0.
+Para cada item, pedir o nome e o preço, somando ao total.
+Processamento:
+Ao final dos itens, perguntar se o cliente é cadastrado (True/False).
+Se for, calcular desconto = total * 0.10 e total_final = total – desconto.
+Senão, o total_final será igual ao total.
+Saída:
+Exibir o valor total com ou sem desconto, de forma clara.
+
+@@08
+Inteligência artificial
+
+Provavelmente, já utilizamos, talvez de forma implícita em alguns momentos, a inteligência artificial. Este termo está em alta, em grande destaque atualmente, seja na mídia, seja principalmente no mundo da tecnologia, devido à quantidade de ferramentas baseadas em IA que têm sido criadas recentemente. É importante destacar que a inteligência artificial é um campo da ciência da computação que não é tão novo quanto parece. Ela surgiu antes mesmo do primeiro computador, como o conhecemos, um computador baseado em válvulas eletroeletrônicas, que é o ENIAC. A IA surge como um campo dedicado ao estudo de máquinas capazes de ter um comportamento inteligente.
+
+E o que seria comportamento inteligente? Seria realizar tarefas semelhantes às executadas por pessoas inteligentes, que, nesse caso, são os humanos. Um dos pioneiros dessa área, Alan Turing, concebeu um teste para classificar uma máquina, um algoritmo, como inteligente ou não. Nesse teste, faz-se uma pergunta para uma máquina e para uma pessoa. A máquina é aquela que se deseja avaliar quanto ao seu grau de inteligência, e a outra é uma pessoa humana. A pessoa que faz a pergunta não sabe, a priori, quem está respondendo, se é a máquina ou a pessoa. Ela obtém as duas respostas, e a máquina só é classificada como inteligente se a pessoa que fez a pergunta não conseguir distinguir a resposta da máquina da resposta da pessoa humana. Este é o famoso teste de Turing.
+
+Comparando ferramentas modernas de IA
+Hoje, já temos muitas ferramentas que passariam nesse teste com facilidade. Por exemplo, se fizermos uma pergunta para um humano e outra para uma ferramenta de IA generativa, como o ChatGPT da OpenAI, o DeepSeq, ou o próprio Cloud da Anthropic, muitas vezes não conseguiríamos distinguir qual resposta foi dada por uma ferramenta baseada em LLM (Large Language Models), que são os modelos de IA por trás dessas ferramentas de processamento da linguagem natural, como é o caso do ChatGPT, e qual seria uma resposta dada por uma pessoa humana.
+
+Entramos mais fortemente nesta era de desenvolvimento de ferramentas baseadas em algoritmos inteligentes, em modelos de inteligência artificial que estão em constante evolução. Quando utilizamos uma dessas ferramentas, percebemos que há um novo modelo, com melhor desempenho, e nos perguntamos em que medida conseguimos utilizar esses modelos. Sobretudo para realizar tarefas repetitivas, que antes exigiam muitas horas de dedicação, agora podemos utilizar esses modelos.
+
+Explorando o conceito de prompt engineering
+Claro que existe toda uma parte prática chamada de prompt engineering (engenharia de prompt), que consiste em escrever prompts para obter boas respostas. É quase como uma programação, utilizando a linguagem natural para usar nessas ferramentas de IA generativa, como também são conhecidas. É importante destacar que, além dessas ferramentas de IA generativa, que são muito utilizadas, como Copilot, Cloud Code e até mesmo Cursor, que possuem uma IA integrada, já temos IA integrada nos próprios ambientes de desenvolvimento. Essa IA nos ajuda a autocompletar algumas partes de código ou até mesmo a escrever programas mais rapidamente. Quando estamos nessa fase inicial de aprendizado, é importante que aprendamos errando. Às vezes, o erro gera frustração, e podemos ficar tentados a ver como o ChatGPT, o Cloud ou o DeepSeek resolveriam isso. No entanto, é importante que desenvolvamos a capacidade de depuração daquilo que estamos criando. Somente com a experiência de entender o que deu errado e como podemos consertar é que nos tornamos pessoas desenvolvedoras.
+
+Desenvolvendo habilidades como pessoa desenvolvedora
+Desenvolver habilidades como pessoa desenvolvedora não é apenas saber uma linguagem, mas ter a habilidade de usá-la bem, compreender um código e depurá-lo. Essa capacidade não é desenvolvida do dia para a noite; ela é desenvolvida a partir de muita prática e de uma rotina de estudos. Portanto, é importante que utilizemos, às vezes, a ferramenta de IA generativa nesse processo. Ela pode encurtar algumas respostas, mas sempre devemos cuidar para que também tenhamos a capacidade de raciocinar e analisar diante de um problema, sem buscar uma resposta e aplicá-la sem refletir sobre ela.
+
+Explorando outras áreas da inteligência artificial
+Outro ponto importante é que o campo da inteligência artificial não se resume às ferramentas de IA generativa. Desde os primórdios, a inteligência artificial esteve em constante evolução. Embora os dispositivos computacionais antigos não favorecessem tanto o desenvolvimento desses modelos, hoje a evolução dos hardwares e a coleta de dados com a variedade de aplicações existentes permitiram o desenvolvimento desses modelos. O campo da inteligência artificial envolve, por exemplo, o processamento de imagens, conhecido como visão computacional, e um pouco de robótica, entre outras áreas que vão além do processamento da linguagem natural utilizado nos LLMs (Large Language Models). É uma área muito promissora, e temos vários conteúdos relacionados à inteligência artificial para que possamos nos desenvolver nessa área como pessoas desenvolvedoras.
+
+@@09
+Planejamento de funcionalidades
+
+A WaveCast, uma plataforma de streaming e distribuição de podcasts, especializada em facilitar a publicação e monetização de conteúdos em áudio para criadores e empresas, está buscando implementar uma nova funcionalidade que permita aos criadores de conteúdo oferecer descontos em assinaturas para ouvintes específicos. A equipe de desenvolvimento que você faz parte precisa definir as regras de negócio para essa funcionalidade. Por exemplo, os descontos podem ser aplicados a ouvintes que sejam estudantes, tenham mais de 60 anos ou sejam assinantes há mais de um ano.
+Qual é a melhor abordagem para definir essas regras de negócio para garantir que a solução atenda às necessidades da plataforma?
+
+Começar a codificação imediatamente com base em suposições sobre as necessidades dos ouvintes e ajustar as regras de negócio conforme surgirem problemas durante o desenvolvimento, sem realizar uma análise prévia detalhada ou consultar as partes interessadas para entender suas expectativas e requisitos específicos.
+ 
+Alternativa incorreta
+Focar apenas na implementação técnica, assumindo que as regras de negócio podem ser ajustadas posteriormente, uma vez que a funcionalidade esteja em uso, sem considerar a importância de uma definição clara e prévia das regras para garantir a eficácia da solução.
+ 
+Alternativa incorreta
+Realizar reuniões com as partes interessadas para entender completamente a demanda, documentar as regras de negócio como condições específicas de elegibilidade, e usar ferramentas como pseudocódigo ou fluxogramas para planejar a implementação técnica antes da codificação.
+ 
+Correta, pois essa abordagem garante que as regras de negócio sejam bem compreendidas e documentadas, permitindo uma implementação técnica eficaz e eficiente que atende às necessidades da plataforma e dos criadores de conteúdo.
+Alternativa incorreta
+Definir as regras de negócio exclusivamente com base em dados demográficos gerais dos ouvintes, sem consultar as partes interessadas ou considerar a viabilidade técnica, e ignorar a necessidade de adaptar as regras às especificidades do mercado e às expectativas dos criadores de conteúdo.
+ 
+Incorreta, pois ignorar a consulta às partes interessadas e a viabilidade técnica pode resultar em regras de negócio que não são práticas ou alinhadas com os objetivos da plataforma, além de desconsiderar a importância de adaptar as regras às especificidades do mercado.
+
+@@10
+Linguagens de baixo nível
+
+A Checklist, uma plataforma de gestão de tarefas e checklists para equipes, está desenvolvendo um novo recurso que permite a integração com dispositivos IoT para automatizar tarefas. A equipe de desenvolvimento, da qual você faz parte, está considerando o uso de linguagens de baixo nível para programar os sistemas embarcados que irão interagir com a plataforma.
+Qual das alternativas abaixo melhor explica a importância de utilizar linguagens de baixo nível para programar sistemas embarcados no contexto da Checklist, e quais são os desafios associados a essa escolha?
+
+Linguagens de baixo nível, como Assembly, são essenciais para programar sistemas embarcados devido à sua proximidade com o hardware. Elas permitem um controle preciso sobre os recursos limitados dos dispositivos IoT, garantindo que as tarefas sejam executadas de forma eficiente e com o menor consumo de energia possível. No entanto, o uso dessas linguagens apresenta desafios, como maior complexidade e dificuldade de manutenção, exigindo desenvolvedores especializados.
+ 
+Correta, pois essa alternativa destaca a importância do controle preciso e eficiência energética proporcionados por linguagens de baixo nível, além de abordar os desafios de complexidade e manutenção, que são cruciais no contexto da integração de dispositivos IoT na Checklist.
+Alternativa incorreta
+Linguagens de baixo nível são preferidas para programar sistemas embarcados porque são mais fáceis de aprender e permitem uma rápida prototipagem, o que é ideal para a integração com dispositivos IoT na Checklist. Além disso, elas são frequentemente escolhidas por sua capacidade de suportar atualizações frequentes e rápidas, permitindo que os desenvolvedores ajustem o software conforme necessário. No entanto, elas podem não oferecer o mesmo nível de controle sobre o hardware que linguagens de alto nível.
+ 
+Incorreta, pois linguagens de baixo nível não são mais fáceis de aprender nem ideais para prototipagem rápida. Além disso, elas oferecem maior controle sobre o hardware, ao contrário do que é afirmado, e a capacidade de suportar atualizações frequentes não é uma característica típica dessas linguagens.
+Alternativa incorreta
+Linguagens de baixo nível são escolhidas para programar sistemas embarcados porque permitem a criação de interfaces de usuário mais sofisticadas, o que é importante para a integração de dispositivos IoT na Checklist. Além disso, essas linguagens são frequentemente utilizadas para garantir que os sistemas possam ser facilmente integrados com outras tecnologias emergentes. No entanto, elas podem ser mais difíceis de depurar.
+ 
+Alternativa incorreta
+O uso de linguagens de baixo nível em sistemas embarcados é importante porque elas são mais seguras e menos propensas a erros, o que é essencial para a integração de dispositivos IoT na Checklist. Além disso, essas linguagens são frequentemente escolhidas por sua capacidade de otimizar o desempenho do sistema, garantindo que os dispositivos operem de forma confiável. No entanto, elas podem ser menos eficientes em termos de consumo de energia.
+
+@@11
+Estruturando organogramas
+
+A Organo, uma plataforma para criação e gestão de organogramas empresariais, está buscando otimizar a forma como os organogramas são gerados e atualizados. A equipe de desenvolvimento que você faz parte está encarregada de implementar um sistema que permita a atualização automática dos organogramas com base em mudanças nos dados de funcionários, como promoções ou transferências.
+Considerando o uso de algoritmos e a necessidade de traduzir essas regras de negócio em código, qual abordagem garantiria que os organogramas reflitam sempre a estrutura organizacional atualizada?
+
+Criar um sistema que atualize os organogramas manualmente, onde a pessoa responsável pela gerência insere as mudanças de dados dos funcionários em um formulário, que então é processado por um script semanal para atualizar o organograma. Além disso, o sistema pode incluir uma revisão periódica para garantir que as informações inseridas estejam corretas e alinhadas com as políticas internas da empresa, minimizando possíveis erros.
+ 
+Incorreta, pois essa abordagem não garante atualizações em tempo real e depende de intervenção manual, o que pode levar a atrasos e erros na representação da estrutura organizacional, mesmo com revisões periódicas.
+Alternativa incorreta
+Implementar um algoritmo que monitore constantemente as mudanças nos dados dos funcionários através de um sistema de eventos ou triggers no banco de dados, disparando atualizações no organograma sempre que uma alteração relevante for detectada. O algoritmo deve identificar o tipo de mudança e aplicar as regras de negócio correspondentes.
+ 
+Correta, pois essa abordagem garante que o sistema de organogramas seja atualizado automaticamente e em tempo real, refletindo as mudanças na estrutura organizacional de forma eficiente e escalável.
+Alternativa incorreta
+Utilizar um sistema de inteligência artificial que preveja mudanças na estrutura organizacional com base em padrões históricos e atualize os organogramas de acordo com essas previsões. O sistema deve ser treinado com um conjunto abrangente de dados históricos e incluir um mecanismo de feedback para ajustar as previsões com base em novas informações e decisões organizacionais.
+ 
+Alternativa incorreta
+Desenvolver um aplicativo front-end que permita aos funcionários atualizarem suas próprias informações de posição e departamento, com as mudanças refletidas automaticamente no organograma. O aplicativo deve incluir um sistema de validação que verifique a consistência das informações inseridas, além de um mecanismo de aprovação por parte dos gestores para garantir que as atualizações sejam precisas e autorizadas.
+ 
+Incorreta, pois permitir que os funcionários atualizem suas próprias informações pode levar a inconsistências e erros, além de não garantir que as regras de negócio sejam aplicadas corretamente, mesmo com validação e aprovação.
+
+@@12
+O que aprendemos?
+
+Nesta aula, aprendemos:
+O conceito de programação como a tradução de algoritmos em linguagens compreensíveis para computadores.
+Diferenças entre linguagens de programação de baixo e alto nível, e o uso de compiladores e interpretadores.
+O uso de IDEs para facilitar a escrita e manutenção de código.
+A interação com computadores através do terminal e a automação de tarefas.
+A necessidade de modelar soluções antes da codificação.
+O conceito de inteligência artificial e o teste de Turing.
+Como habilidades em depuração e análise de código são essenciais.
+
+@@13
+Referências
+
+1 - Lógica de Programação: a construção de algoritmos e estruturas de dados
+Este livro clássico apresenta os fundamentos da lógica de programação com foco na construção de algoritmos, utilizando uma abordagem didática e linguagem acessível. É indicado para iniciantes que desejam compreender estruturas sequenciais, condicionais e de repetição.
+
+2 - Lógica de Programação com Portugol
+
+Neste livro, Joice Mendes e Rafael Muniz apresentam todos os conceitos necessários para a criação da lógica de programação e dos algoritmos. Você vai aprimorar sua percepção lógica e aprender a aplicá-la na programação, cobrindo tópicos desde a sintaxe do Portugol, variáveis, comandos, estruturas condicionais, operadores relacionais e lógicos, estruturas de repetição, até vetores, matrizes e funções. O material é recheado com 85 exemplos de código, 55 exercícios de fixação com gabarito e um projeto prático ao longo do aprendizado. Todos os capítulos contam com um vídeo complementar disponibilizado na internet.
+
+3 - Coleção Comece a Programar
+
+Esta sequência de três livros foi pensada para quem quer começar a programar de forma rápida e prática, mesmo sem experiência prévia.
+
+4 - Código Limpo: Habilidades Práticas do Agile Software
+
+Embora mais avançado, este material traz conceitos de boas práticas desde os primeiros passos com algoritmos e estruturação de código. Destaca a importância de nomeação clara, modularização e organização lógica.
+
+5 - Algoritmos - Teoria e Prática
+
+Este livro apresenta um texto abrangente sobre o moderno estudo de algoritmos para computadores. É uma obra clássica, cuja primeira edição tornou-se amplamente adotada nas melhores universidades em todo o mundo, bem como padrão de referência para profissionais da área.
+
+https://www.amazon.com.br/Lógica-programação-construção-algoritmos-estruturas/dp/8576050242
+
+https://www.casadocodigo.com.br/products/livro-portugol
+
+https://www.casadocodigo.com.br/products/colecao-comece-a-programar
+
+https://www.amazon.com.br/Código-limpo-Robert-C-Martin/dp/8576082675
+
+https://books.google.com.br/books/about/Algoritmos_Teoria_e_Prática.html?id=6iA4LgEACAAJ&source=kp_book_description&redir_esc=y
+
+@@14
+Conclusão
+
+Foi uma longa jornada até aqui, não foi mesmo? Nós começamos entendendo mais sobre o mundo da computação e como ele está inserido na dinâmica de mercado, no contexto da economia criativa. Vimos como pessoas desenvolvedoras são importantes, especialmente aquelas com diferentes especialidades, para construirmos aplicações e sistemas mais complexos, com componentes como back-end, front-end e banco de dados.
+
+Também embarcamos no entendimento de como poderíamos utilizar uma abordagem conhecida como pensamento computacional em problemas do cotidiano e como essa abordagem pode ser aplicada em áreas bem diferentes da própria computação. Em seguida, começamos a elaboração de algoritmos. A partir da decomposição de problemas, do reconhecimento de padrões e da abstração, percebemos que poderíamos elaborar uma sequência de instruções claras, precisas e ordenadas para resolver uma tarefa, um problema ou até mesmo atender uma demanda.
+
+Explorando algoritmos e estruturas lógicas
+Como passo seguinte, vimos que esses algoritmos poderiam ser estruturados de maneira mais lógica, utilizando elementos como variáveis de diferentes tipos e condicionais para determinar qual caminho seguiríamos. Por exemplo, no caso do bolo, poderíamos testar uma determinada condição de textura para verificar se o bolo estava assado ou não, decidindo se ele continuaria no forno ou se já o retiraríamos para esfriar e servir com café.
+
+Também vimos que poderíamos utilizar uma sequência de instruções várias vezes, não apenas uma. Utilizamos loops ou laços de repetição, também com teste de uma condição. E, ao falar sobre o teste de condição, vimos que ele não se limita a uma única condição; podemos utilizar conectivos lógicos ou operadores lógicos para testar mais de uma condição simultaneamente. São eles: E, OU e NÃO, que em inglês são AND, OR e NOT.
+
+Utilizando operadores e linguagens de programação
+Além disso, vimos que podemos utilizar operadores relacionais para comparar o valor de uma variável com um número de referência, como igual, diferente, maior ou menor. Também podemos utilizar operadores aritméticos para realizar operações com as variáveis ao longo de um algoritmo. Criamos alguns algoritmos utilizando linguagens como o pseudocódigo, em uma linguagem mais natural. Depois, utilizamos também o fluxograma, como no caso do algoritmo de classificação para determinar se um número era par ou ímpar.
+
+Durante o curso, evoluímos para entender como transformar algoritmos, que desenvolvemos utilizando uma linguagem próxima à que usamos no dia a dia, chamada de linguagem natural, em uma linguagem compreensível pelos computadores, por meio da construção de programas. Observamos como construir programas de computador utilizando dois elementos básicos: a lógica de programação, aplicada na construção de algoritmos, e uma linguagem de programação.
+
+Destacando linguagens de programação e execução de código
+Focamos em destacar linguagens de programação frequentemente utilizadas na construção do componente de back-end das aplicações, como Python, Java, C#, Go e PHP. Em seguida, exploramos como uma linguagem de alto nível, como as mencionadas, é traduzida para uma linguagem de baixo nível, como código binário, que é entendido, interpretado e executado pelos computadores, através de diferentes mecanismos de tradução, usando interpretadores ou compiladores.
+
+Analisamos a distinção entre uma linguagem de alto nível e uma de baixo nível, e até mesmo executamos um "Hello World" usando o terminal dentro de um ambiente de desenvolvimento, como o VS Code. Digitamos echo hello world e obtivemos uma interação direta com o computador a partir do prompt de comando do PowerShell, no caso de quem utiliza o sistema operacional Windows.
+
+Concluindo o curso e incentivando o aprendizado contínuo
+Por fim, comentamos sobre o processo de desenvolvimento dos códigos, os ciclos iterativos de desenvolvimento, e destacamos como a inteligência artificial está inserida nesse contexto. Discutimos algumas boas práticas de como utilizar a inteligência artificial e ferramentas de AR generativa como suporte no processo de aprendizado como pessoas desenvolvedoras, sempre tomando precauções para desenvolver as habilidades e competências necessárias para sermos de fato pessoas desenvolvedoras no back-end.
+
+Parabéns por concluir este curso. Além dos vídeos, oferecemos atividades e um fórum para esclarecer dúvidas. Não deixe de avaliar o curso para que possamos sempre melhorar nosso conteúdo na plataforma. Encorajamos a seguir firme na jornada de aprendizado pelo mundo da tecnologia conosco.
